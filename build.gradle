@@ -28,7 +28,19 @@ targetCompatibility = 1.8
 
 
 dependencies {
-
+    compile 'javax.ws.rs:javax.ws.rs-api:2.0'
+    // Jersey dependencies
+    // Rest Client
+    compile 'org.glassfish.jersey.core:jersey-client:2.22.1'
+    //REST SERVER
+    compile 'org.glassfish.jersey.core:jersey-server:2.22.1'
+    //HTTP Server
+    compile 'org.glassfish.jersey.containers:jersey-container-jdk-http:2.22.1'
+    //JAXB Support
+    compile 'org.glassfish.jersey.media:jersey-media-jaxb:2.22.1'
+    //JSON Support (if needed later)
+    compile 'org.glassfish.jersey.media:jersey-media-json-jackson:2.22.1'
+    //Hibernate
     compile 'org.hibernate:hibernate-core:5.2.11.Final'
     compile 'com.zsoltfabok:sqlite-dialect:1.0'
     compile 'org.xerial:sqlite-jdbc:3.7.2'
