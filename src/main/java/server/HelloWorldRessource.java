@@ -13,10 +13,16 @@ import javax.ws.rs.core.Response;
 @Path("/greeting")
 public class HelloWorldRessource {
     @GET
-    @Path("/{name}")
+    @Path("/{id}")
     @Produces(MediaType.APPLICATION_XML)
-    public Response getMsg(@PathParam("name") final String name){
-        final String output = "Hello " + name + "\n";
-        return Response.status(Response.Status.OK).entity(output).build();
+    public Response getMsg(@PathParam("id") final int id) {
+        // final String output = "Hello " + id + "\n";
+        player pl = new player(0, "Benjamin", "Hartmann", 29, "ElMuldo");
+
+        final String output = pl.getFirst_name();
+        if (id == pl.getPlayer_id())
+            return Response.status(Response.Status.OK).entity(output).build();
+        else
+            return Response.status(Response.Status.NOT_FOUND).build();
     }
 }
