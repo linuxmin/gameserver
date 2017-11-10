@@ -1,18 +1,25 @@
 package server; /**
  * Created by laptop on 06.11.17.
  */
-import javax.persistence.Column;
-import javax.persistence.Table;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 
 @Entity
 @Table
-@XmlRootElement(name = "player")
-public class player {
+@XmlRootElement(name = "registernewplayer")
+@NamedQueries({
+        @NamedQuery(
+                name = "get_player_by_first_name",
+                query = "from Player where first_name = :name"
+        )
+})
+public class Player {
     @Id
+    @GeneratedValue
+    @XmlElement(name="player_id")
     @Column(name="player_id")
     private Integer player_id;
 
@@ -32,9 +39,10 @@ public class player {
     @Column(name="nickname")
     private String nickname;
 
-    player(){}  //default constructor for hibernate
 
-    player(Integer player_id, String first_name, String last_name, Integer age, String nickname){
+    Player(){}  //default constructor for hibernate
+
+    Player(Integer player_id, String first_name, String last_name, Integer age, String nickname){
    //     init(player_id,first_name,last_name,age,nickname);
         this.player_id = player_id;
         this.first_name = first_name;
