@@ -5,7 +5,6 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
-import org.junit.runner.Result;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -17,11 +16,15 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;
 import java.io.OutputStream;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 /**
  * Created by laptop on 07.11.17.
  */
+
 @Path("/test")
-public class TestRessource {
+public class TestResource {
 
     private static SessionFactory sessionFactory = null;
     private static SessionFactory configureSessionFactory() throws HibernateException {
@@ -30,6 +33,7 @@ public class TestRessource {
                 .buildSessionFactory();
         return sessionFactory;
     }
+    private static final Logger LOGGER = LogManager.getLogger(TestResource.class);
     @GET
     @Path("/{first_name}")
     @Produces(MediaType.APPLICATION_XML)
@@ -42,7 +46,7 @@ public class TestRessource {
         Player pl = session.createNamedQuery("get_player_by_first_name", Player.class)
                 .setParameter("name",first_name)
                 .getSingleResult();
-
+        LOGGER.info(Response.status(Response.Status.OK).type(MediaType.APPLICATION_XML).entity(pl).build());
 
             return Response.status(Response.Status.OK).type(MediaType.APPLICATION_XML).entity(pl).build();
 

@@ -1,9 +1,13 @@
 package server;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.io.*;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Marshaller;
 import javax.xml.bind.Unmarshaller;
+
 
 
 public class testxmlplayer {
@@ -39,12 +43,17 @@ public class testxmlplayer {
             return (Player) unmarshaller.unmarshal(is);
         }
     }
+    // initialise logger for testxmlplayer class
+    private static final Logger LOGGER = LogManager.getLogger(testxmlplayer.class);
 
     public static void main(final String[] args) throws Exception{
         String home = System.getProperty("user.home");
         //File f = new File(home + "/.config/gfgd.gfgdf");
         final Player pl = testxmlplayer.readPlayer("/home/linuxmin/gameserver/src/main/resources/requestregisternewplayer.xml");
         final int output = pl.getPlayer_id();
-        System.out.println(output);
+        LOGGER.info("new logrun started" + "\n");
+        LOGGER.debug(output);
+        //System.out.println(output);
+
     }
 }

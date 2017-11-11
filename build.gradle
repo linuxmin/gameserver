@@ -42,11 +42,16 @@ dependencies {
     compile 'org.glassfish.jersey.media:jersey-media-json-jackson:2.22.1'
     //Hibernate
     compile 'org.hibernate:hibernate-core:5.2.11.Final'
-    //JPA
+    //JPA if used
     compile 'org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final'
+
     compile 'com.zsoltfabok:sqlite-dialect:1.0'
     compile 'org.xerial:sqlite-jdbc:3.7.2'
     compile("org.springframework.boot:spring-boot-starter-web")
+    // Logging with log4j
+    compile group: 'org.apache.logging.log4j', name:'log4j-api', version: '2.8.2'
+    compile group: 'org.apache.logging.log4j', name:'log4j-core', version: '2.8.2'
+
     testCompile('org.springframework.boot:spring-boot-starter-test')
     testCompile group: 'junit', name: 'junit', version: '4.12'
     sourceCompatibility = 1.8
