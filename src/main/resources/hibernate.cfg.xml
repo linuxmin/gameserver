@@ -12,6 +12,8 @@
         <property name="connection.username"/>
         <property name="connection.password"/>
         <mapping class="server.Player"></mapping>
+        <mapping class="server.Game"></mapping>
+        <mapping class="server.Play"></mapping>
         <!-- DB schema will be updated if needed -->
     </session-factory>
 </hibernate-configuration>

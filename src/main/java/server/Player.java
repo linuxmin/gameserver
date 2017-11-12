@@ -1,12 +1,6 @@
 package server; /**
  * Created by laptop on 06.11.17.
  */
-import org.hibernate.HibernateException;
-import org.hibernate.Session;
-import org.hibernate.Transaction;
-import org.hibernate.SessionFactory;
-import org.hibernate.cfg.Configuration;
-import org.hibernate.internal.SessionOwnerBehavior;
 
 import javax.persistence.*;
 import javax.xml.bind.annotation.XmlElement;
@@ -26,7 +20,7 @@ import javax.persistence.NamedQuery;
 public class Player {
     @Id
     @GeneratedValue(generator = "sqlite")
-    @TableGenerator(name="sqlite", table="sqlite_sequence",pkColumnName = "name", valueColumnName = "seq", pkColumnValue = "Player")
+    @TableGenerator(name="sqlite", table="sqlite_sequence",pkColumnName = "name", valueColumnName = "seq", pkColumnValue = "Player", initialValue=1, allocationSize=1)
     @XmlElement(name="player_id")
     @Column(name="player_id")
     private Integer player_id;
@@ -47,10 +41,13 @@ public class Player {
     @Column(name="nickname")
     private String nickname;
 
+    @Transient
+    private Integer game_id;
 
     Player(){}  //default constructor for hibernate
 
-    Player(Integer player_id,String first_name, String last_name, Integer age, String nickname){
+
+    Player(Integer player_id, String first_name, String last_name, Integer age, String nickname){
    //     init(player_id,first_name,last_name,age,nickname);
         this.player_id = player_id;
         this.first_name = first_name;
@@ -87,5 +84,11 @@ public class Player {
         return this.nickname;
     }
 
+    public Integer getGame_id() {
+        return game_id;
+    }
 
+    public void setGame_id(Integer game_id) {
+        this.game_id = game_id;
+    }
 }
