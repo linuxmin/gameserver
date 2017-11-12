@@ -1,6 +1,13 @@
 package server; /**
  * Created by laptop on 06.11.17.
  */
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.internal.SessionOwnerBehavior;
+
 import javax.persistence.*;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -18,7 +25,8 @@ import javax.persistence.NamedQuery;
 })
 public class Player {
     @Id
-    @GeneratedValue
+    @GeneratedValue(generator = "sqlite")
+    @TableGenerator(name="sqlite", table="sqlite_sequence",pkColumnName = "name", valueColumnName = "seq", pkColumnValue = "Player")
     @XmlElement(name="player_id")
     @Column(name="player_id")
     private Integer player_id;
@@ -42,7 +50,7 @@ public class Player {
 
     Player(){}  //default constructor for hibernate
 
-    Player(Integer player_id, String first_name, String last_name, Integer age, String nickname){
+    Player(Integer player_id,String first_name, String last_name, Integer age, String nickname){
    //     init(player_id,first_name,last_name,age,nickname);
         this.player_id = player_id;
         this.first_name = first_name;
@@ -78,4 +86,6 @@ public class Player {
     public String getNickname(){
         return this.nickname;
     }
+
+
 }

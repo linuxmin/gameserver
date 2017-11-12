@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="registernewplayer" type="registernewplayerType"/>
+  <xs:complexType name="registernewplayerType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="first_name"/>
+      <xs:element type="xs:string" name="last_name"/>
+      <xs:element type="xs:int" name="age"/>
+      <xs:element type="xs:string" name="nickname"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

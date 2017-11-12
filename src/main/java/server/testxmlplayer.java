@@ -19,7 +19,7 @@ public class testxmlplayer {
 
         try(final OutputStream os = new BufferedOutputStream(new FileOutputStream(filename)))
         {
-            final Player pl = new Player(0,"Benjamin","Hartmann",29, "ElMuldo");
+            final Player pl = new Player(1,"Benjamin","Hartmann",29, "ElMuldo");
              marshaller.marshal(pl,os);
         }
     }

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<registernewplayer>
-<player_id>1</player_id>
-    <first_name>Julia</first_name>
-    <last_name>Hartmann</last_name>
-    <age>29</age>
-    <nickname>Ulia</nickname>
-</registernewplayer>

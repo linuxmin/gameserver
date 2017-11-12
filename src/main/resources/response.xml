@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<registernewplayer>
-    <player_id>1</player_id>
-    <first_name>Franco</first_name>
-    <last_name>Italiano</last_name>
-    <age>33</age>
-    <nickname>itaker</nickname>
-</registernewplayer>
