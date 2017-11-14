@@ -15,6 +15,11 @@ import javax.persistence.NamedQuery;
         @NamedQuery(
                 name = "get_player_by_first_name",
                 query = "from Player where first_name = :name"
+        ),
+
+        @NamedQuery(
+                name = "get_player_by_id",
+                query = "from Player where player_id = :id"
         )
 })
 public class Player {
@@ -43,6 +48,10 @@ public class Player {
 
     @Transient
     private Integer game_id;
+
+
+    @Transient
+    private Integer map_id;
 
     Player(){}  //default constructor for hibernate
 
@@ -90,5 +99,13 @@ public class Player {
 
     public void setGame_id(Integer game_id) {
         this.game_id = game_id;
+    }
+
+    public Integer getMap_id() {
+        return map_id;
+    }
+
+    public void setMap_id(Integer map_id) {
+        this.map_id = map_id;
     }
 }

@@ -11,12 +11,19 @@ import java.time.Clock;
 
 @Entity
 @Table(name="game")
-@XmlRootElement(name = "responsegame")
+@XmlRootElement(name = "registernewplayer")
 @NamedQueries({
         @NamedQuery(
                 name = "get_open_game",
                 query = "from Game where player2_id = null"
+        ),
+
+        @NamedQuery(
+                name = "get_game_id_player",
+                query = "from Game where player1_id = :id or player2_id =:id"
         )
+
+
 })
 
 public class Game {

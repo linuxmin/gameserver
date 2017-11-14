@@ -7,7 +7,10 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
-public class WriteToDB {
+public class WriteToDBPlayer {
+    Session session = null;
+    Transaction tx = null;
+    Player player;
 
     private static SessionFactory sessionFactory = null;
     private static SessionFactory configureSessionFactory() throws HibernateException {
@@ -19,18 +22,18 @@ public class WriteToDB {
 
 
 
-    public WriteToDB(Object object)
+    public WriteToDBPlayer(Player player)
     {
-
-
+        this.player = player;
         configureSessionFactory();
-        Session session = null;
-        Transaction tx = null;
 
+    }
+
+    public void write(){
         try{
             session = sessionFactory.openSession();
             tx = session.beginTransaction();
-            session.save(object);
+            session.save(this.player);
             session.flush();
             tx.commit();
         } catch (Exception e) {
