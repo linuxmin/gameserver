@@ -91,13 +91,14 @@ public class QueryDBOpenGame {
         try{
             session = sessionFactory.openSession();
             tx = session.beginTransaction();
-            Game game = session.createNamedQuery("get_game_id_player", Game.class).setParameter("id",this.player_id)
+            Game game = session.createNamedQuery("get_game_id_player", Game.class).setParameter("id",player_id)
                     .getSingleResult();
             Integer game_id = game.getGame_id();
+            session.flush();
+            tx.commit();
             return game_id;
             //session.save(player);
-            // session.flush();
-            //  tx.commit();
+
         } catch (Exception e) {
             e.printStackTrace();
             tx.rollback();

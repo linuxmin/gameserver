@@ -26,7 +26,7 @@ import java.time.Clock;
 
 })
 
-public class Game {
+public class Game extends DBObject {
     @Id
     @GeneratedValue(generator = "sqlite")
     @TableGenerator(name="sqlite", table="sqlite_sequence",pkColumnName = "name", valueColumnName = "seq", pkColumnValue = "game", initialValue=1, allocationSize=1)
@@ -49,7 +49,7 @@ public class Game {
     @Column(name = "end_code")
     private Integer end_code;
 
-    Game() {} //empty constructor for hibernate
+    Game() {} //empty constructor for
 
     Game(Integer game_id){
         this.game_id = game_id;

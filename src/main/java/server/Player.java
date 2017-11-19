@@ -22,7 +22,7 @@ import javax.persistence.NamedQuery;
                 query = "from Player where player_id = :id"
         )
 })
-public class Player {
+public class Player extends DBObject {
     @Id
     @GeneratedValue(generator = "sqlite")
     @TableGenerator(name="sqlite", table="sqlite_sequence",pkColumnName = "name", valueColumnName = "seq", pkColumnValue = "Player", initialValue=1, allocationSize=1)

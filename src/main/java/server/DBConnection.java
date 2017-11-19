@@ -15,18 +15,7 @@ public class DBConnection {
     Session session = null;
     Transaction tx = null;
 
-    DBConnection(){
-        try{
-
-            session = sessionFactory.openSession();
-
-
-        } catch (Exception e) {
-            e.printStackTrace();
-            tx.rollback();
-
-        }
-    }
+    DBConnection(){}
 
     public void close (){
         if(session != null){
@@ -34,20 +23,33 @@ public class DBConnection {
         }
     }
 
-    public void write(Object object){
+    public void write(DBObject dbObject){
+        session = sessionFactory.openSession();
         tx = session.beginTransaction();
-        session.save(object);
-        session.flush();
-        tx.commit();
+        try {
+            session.save(dbObject);
+            session.flush();
+            tx.commit();
+        }catch(Exception e){
+            e.printStackTrace();
+            tx.rollback();
+            session.close();
+        }
     }
 
-    public boolean query(String name, String cl) throws Exception{
+    public boolean query(String name) throws Exception{
         try {
-            session.createNamedQuery(name, )
+            session = sessionFactory.openSession();
+            session.createNamedQuery(name)
                     .getSingleResult();
             return true;
         }catch(Exception e){
+            e.printStackTrace();
             return false;
+        }finally{
+            if(session != null){
+                session.close();
+            }
         }
 
     }

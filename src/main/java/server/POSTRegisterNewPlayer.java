@@ -10,7 +10,8 @@ public class POSTRegisterNewPlayer {
     @Consumes(MediaType.APPLICATION_XML)
     public Response consumeXML(Player player ) {
         //write new Player to the DB
-        new WriteToDB(player);
+       new WriteToDB(player);
+      //  player.write();
         //WriteToDBPlayer writeToDBPlayer = new WriteToDBPlayer(player);
         //writeToDBPlayer.write();
         //query DB if there is already a Game with 1 Player waiting for Player 2.
@@ -25,7 +26,7 @@ public class POSTRegisterNewPlayer {
 
             //if no open Game exists a new one will be created and the game_id will be set as the players game_id
             Game game = new Game(player);
-            new WriteToDB(game);
+           // new WriteToDB(game);
             player.setGame_id(game.getGame_id());
             //return the data
             return Response.status(200).type(MediaType.APPLICATION_XML).entity(player).build();

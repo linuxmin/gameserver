@@ -20,7 +20,7 @@ import javax.persistence.NamedQuery;
                 query = "from Map where player_id = :name"
         )
 })
-public class Map {
+public class Map extends DBObject{
     @Id
     @GeneratedValue(generator = "sqlite")
     @TableGenerator(name="sqlite", table="sqlite_sequence",pkColumnName = "name", valueColumnName = "seq", pkColumnValue = "Map", initialValue=1, allocationSize=1)

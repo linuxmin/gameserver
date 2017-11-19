@@ -4601,3 +4601,615 @@ java.sql.SQLException: [SQLITE_BUSY]  The database file is locked (database is l
 2017-11-14 03:28:01 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
 2017-11-14 03:28:01 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
 2017-11-14 03:28:01 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 04:32:35 INFO  [jdk-http-server-0] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-14 04:32:35 INFO  [jdk-http-server-0] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-11-14 04:32:36 INFO  [jdk-http-server-0] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-14 04:32:36 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 04:32:36 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 04:32:36 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 04:32:36 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 04:32:36 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 04:32:36 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 04:32:36 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 04:32:36 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 04:32:36 INFO  [jdk-http-server-0] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 04:32:37 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 04:34:01 INFO  [jdk-http-server-0] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-14 04:34:01 INFO  [jdk-http-server-0] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-11-14 04:34:01 INFO  [jdk-http-server-0] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-14 04:34:01 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 04:34:01 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 04:34:01 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 04:34:01 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 04:34:01 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 04:34:01 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 04:34:01 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 04:34:01 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 04:34:02 INFO  [jdk-http-server-0] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 04:34:02 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 04:59:03 INFO  [jdk-http-server-0] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-14 04:59:03 INFO  [jdk-http-server-0] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-11-14 04:59:04 INFO  [jdk-http-server-0] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-14 04:59:04 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 04:59:04 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 04:59:04 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 04:59:04 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 04:59:04 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 04:59:04 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 04:59:04 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 04:59:04 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 04:59:04 INFO  [jdk-http-server-0] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 04:59:05 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 05:16:29 INFO  [jdk-http-server-0] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-14 05:16:29 INFO  [jdk-http-server-0] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-11-14 05:16:29 INFO  [jdk-http-server-0] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-14 05:16:29 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:16:29 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 05:16:29 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 05:16:29 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 05:16:29 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 05:16:29 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 05:16:29 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:16:29 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 05:16:30 INFO  [jdk-http-server-0] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 05:16:30 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 05:30:54 INFO  [jdk-http-server-0] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-14 05:30:54 INFO  [jdk-http-server-0] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-11-14 05:30:54 INFO  [jdk-http-server-0] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-14 05:30:54 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:30:54 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 05:30:54 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 05:30:54 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 05:30:54 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 05:30:54 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 05:30:54 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:30:55 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 05:30:55 INFO  [jdk-http-server-0] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 05:30:55 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 05:33:07 INFO  [jdk-http-server-0] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-14 05:33:07 INFO  [jdk-http-server-0] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-11-14 05:33:07 INFO  [jdk-http-server-0] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-14 05:33:07 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:33:07 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 05:33:07 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 05:33:07 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 05:33:07 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 05:33:07 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 05:33:07 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:33:07 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 05:33:08 INFO  [jdk-http-server-0] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 05:33:08 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 05:33:53 INFO  [jdk-http-server-0] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-14 05:33:53 INFO  [jdk-http-server-0] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-11-14 05:33:53 INFO  [jdk-http-server-0] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-14 05:33:53 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:33:53 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 05:33:53 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 05:33:54 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 05:33:54 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 05:33:54 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 05:33:54 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:33:54 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 05:33:54 INFO  [jdk-http-server-0] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 05:33:54 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 05:35:01 INFO  [jdk-http-server-0] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-14 05:35:01 INFO  [jdk-http-server-0] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-11-14 05:35:01 INFO  [jdk-http-server-0] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-14 05:35:01 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:35:01 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 05:35:01 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 05:35:01 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 05:35:01 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 05:35:01 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 05:35:01 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:35:01 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 05:35:02 INFO  [jdk-http-server-0] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 05:35:02 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 05:35:47 INFO  [jdk-http-server-0] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-14 05:35:47 INFO  [jdk-http-server-0] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-11-14 05:35:47 INFO  [jdk-http-server-0] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-14 05:35:47 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:35:47 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 05:35:47 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 05:35:47 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 05:35:47 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 05:35:47 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 05:35:47 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:35:47 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 05:35:47 INFO  [jdk-http-server-0] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 05:35:48 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 05:37:13 INFO  [jdk-http-server-0] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-14 05:37:13 INFO  [jdk-http-server-0] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-11-14 05:37:13 INFO  [jdk-http-server-0] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-14 05:37:13 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:37:13 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 05:37:13 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 05:37:13 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 05:37:13 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 05:37:13 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 05:37:13 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:37:13 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 05:37:14 INFO  [jdk-http-server-0] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 05:37:14 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 05:38:09 INFO  [jdk-http-server-0] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-14 05:38:09 INFO  [jdk-http-server-0] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-11-14 05:38:09 INFO  [jdk-http-server-0] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-14 05:38:09 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:38:09 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 05:38:09 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 05:38:09 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 05:38:09 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 05:38:09 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 05:38:09 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:38:09 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 05:38:10 INFO  [jdk-http-server-0] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 05:38:10 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 05:41:04 INFO  [jdk-http-server-0] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-14 05:41:04 INFO  [jdk-http-server-0] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-11-14 05:41:05 INFO  [jdk-http-server-0] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-14 05:41:05 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:41:05 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 05:41:05 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 05:41:05 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 05:41:05 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 05:41:05 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 05:41:05 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:41:05 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 05:41:05 INFO  [jdk-http-server-0] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 05:41:05 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001008: Cleaning up connection pool [jdbc:sqlite:mydb.db]
+2017-11-14 05:42:06 INFO  [jdk-http-server-0] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-14 05:42:06 INFO  [jdk-http-server-0] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-11-14 05:42:06 INFO  [jdk-http-server-0] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-14 05:42:06 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:42:07 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 05:42:07 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 05:42:07 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 05:42:07 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 05:42:07 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 05:42:07 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:42:07 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 05:42:07 INFO  [jdk-http-server-0] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 05:42:07 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 05:43:10 INFO  [jdk-http-server-0] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-14 05:43:10 INFO  [jdk-http-server-0] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-11-14 05:43:10 INFO  [jdk-http-server-0] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-14 05:43:10 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:43:10 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 05:43:10 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 05:43:10 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 05:43:10 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 05:43:10 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 05:43:10 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:43:10 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 05:43:10 INFO  [jdk-http-server-0] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 05:43:11 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 05:43:14 WARN  [jdk-http-server-0] org.hibernate.engine.jdbc.spi.SqlExceptionHelper: SQL Error: 0, SQLState: null
+2017-11-14 05:43:14 ERROR [jdk-http-server-0] org.hibernate.engine.jdbc.spi.SqlExceptionHelper: database is locked
+2017-11-14 05:43:41 WARN  [jdk-http-server-0] org.hibernate.engine.jdbc.spi.SqlExceptionHelper: SQL Error: 0, SQLState: null
+2017-11-14 05:43:41 ERROR [jdk-http-server-0] org.hibernate.engine.jdbc.spi.SqlExceptionHelper: database is locked
+2017-11-14 05:45:05 INFO  [jdk-http-server-0] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-14 05:45:05 INFO  [jdk-http-server-0] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-11-14 05:45:05 INFO  [jdk-http-server-0] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-14 05:45:05 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:45:05 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 05:45:05 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 05:45:05 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 05:45:05 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 05:45:05 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 05:45:05 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:45:05 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 05:45:05 INFO  [jdk-http-server-0] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 05:45:06 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 05:45:09 WARN  [jdk-http-server-0] org.hibernate.engine.jdbc.spi.SqlExceptionHelper: SQL Error: 0, SQLState: null
+2017-11-14 05:45:09 ERROR [jdk-http-server-0] org.hibernate.engine.jdbc.spi.SqlExceptionHelper: database is locked
+2017-11-14 05:46:49 INFO  [jdk-http-server-0] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-14 05:46:49 INFO  [jdk-http-server-0] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-11-14 05:46:50 INFO  [jdk-http-server-0] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-14 05:46:50 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:46:50 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 05:46:50 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 05:46:50 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 05:46:50 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 05:46:50 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 05:46:50 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:46:50 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 05:46:50 INFO  [jdk-http-server-0] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 05:46:51 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 05:46:54 WARN  [jdk-http-server-0] org.hibernate.engine.jdbc.spi.SqlExceptionHelper: SQL Error: 0, SQLState: null
+2017-11-14 05:46:54 ERROR [jdk-http-server-0] org.hibernate.engine.jdbc.spi.SqlExceptionHelper: database is locked
+2017-11-14 05:49:00 INFO  [jdk-http-server-0] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-14 05:49:00 INFO  [jdk-http-server-0] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-11-14 05:49:00 INFO  [jdk-http-server-0] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-14 05:49:00 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:49:00 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 05:49:00 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 05:49:00 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 05:49:00 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 05:49:00 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 05:49:00 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:49:00 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 05:49:01 INFO  [jdk-http-server-0] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 05:49:01 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 05:49:04 WARN  [jdk-http-server-0] org.hibernate.engine.jdbc.spi.SqlExceptionHelper: SQL Error: 0, SQLState: null
+2017-11-14 05:49:04 ERROR [jdk-http-server-0] org.hibernate.engine.jdbc.spi.SqlExceptionHelper: database is locked
+2017-11-14 05:50:18 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 05:50:18 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 05:50:18 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 05:50:18 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 05:50:18 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 05:50:18 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:50:18 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 05:50:18 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 05:50:33 INFO  [jdk-http-server-0] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-14 05:50:33 INFO  [jdk-http-server-0] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-11-14 05:50:33 INFO  [jdk-http-server-0] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-14 05:50:33 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:50:33 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 05:50:33 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 05:50:33 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 05:50:33 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 05:50:33 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 05:50:33 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:50:33 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 05:50:33 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 05:50:33 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 05:50:33 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 05:50:33 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 05:50:33 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 05:50:33 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:50:33 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 05:50:34 INFO  [jdk-http-server-0] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 05:50:34 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 05:50:34 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 05:50:54 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 05:50:54 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 05:50:54 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 05:50:54 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 05:50:54 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 05:50:54 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:50:54 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 05:50:54 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 05:51:11 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 05:51:11 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 05:51:11 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 05:51:11 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 05:51:11 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 05:51:11 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:51:11 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 05:51:11 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 05:51:22 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 05:51:22 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 05:51:22 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 05:51:22 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 05:51:22 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 05:51:22 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:51:22 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 05:51:22 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 05:52:50 INFO  [jdk-http-server-0] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-14 05:52:50 INFO  [jdk-http-server-0] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-11-14 05:52:50 INFO  [jdk-http-server-0] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-14 05:52:50 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:52:50 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 05:52:50 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 05:52:50 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 05:52:50 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 05:52:50 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 05:52:50 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:52:50 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 05:52:50 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 05:52:50 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 05:52:50 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 05:52:50 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 05:52:50 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 05:52:50 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:52:50 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 05:52:50 INFO  [jdk-http-server-0] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 05:52:51 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 05:52:51 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 05:53:17 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 05:53:17 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 05:53:17 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 05:53:17 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 05:53:17 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 05:53:17 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:53:17 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 05:53:17 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 05:53:18 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 05:53:18 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 05:53:18 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 05:53:18 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 05:53:18 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 05:53:18 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:53:18 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 05:53:18 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 05:53:47 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 05:53:47 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 05:53:47 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 05:53:47 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 05:53:47 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 05:53:47 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:53:47 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 05:53:47 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 05:53:48 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 05:53:48 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 05:53:48 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 05:53:48 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 05:53:48 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 05:53:48 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:53:48 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 05:53:48 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 05:53:49 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 05:53:49 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 05:53:49 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 05:53:49 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 05:53:49 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 05:53:49 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:53:49 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 05:53:49 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 05:54:06 WARN  [jdk-http-server-0] org.hibernate.engine.jdbc.spi.SqlExceptionHelper: SQL Error: 0, SQLState: null
+2017-11-14 05:54:06 ERROR [jdk-http-server-0] org.hibernate.engine.jdbc.spi.SqlExceptionHelper: database is locked
+2017-11-14 05:55:50 INFO  [jdk-http-server-0] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-14 05:55:50 INFO  [jdk-http-server-0] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-11-14 05:55:50 INFO  [jdk-http-server-0] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-14 05:55:50 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:55:50 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 05:55:50 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 05:55:50 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 05:55:50 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 05:55:50 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 05:55:50 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:55:50 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 05:55:50 INFO  [jdk-http-server-0] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 05:55:51 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 05:56:26 INFO  [jdk-http-server-0] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-14 05:56:26 INFO  [jdk-http-server-0] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-11-14 05:56:27 INFO  [jdk-http-server-0] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-14 05:56:27 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:56:27 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 05:56:27 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 05:56:27 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 05:56:27 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 05:56:27 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 05:56:27 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 05:56:27 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 05:56:27 INFO  [jdk-http-server-0] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 05:56:28 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 06:17:31 INFO  [jdk-http-server-0] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-14 06:17:31 INFO  [jdk-http-server-0] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-11-14 06:17:31 INFO  [jdk-http-server-0] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-14 06:17:31 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 06:17:31 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 06:17:31 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 06:17:31 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 06:17:31 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 06:17:31 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 06:17:31 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 06:17:31 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 06:17:32 INFO  [jdk-http-server-0] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 06:17:32 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 06:17:35 WARN  [jdk-http-server-0] org.hibernate.engine.jdbc.spi.SqlExceptionHelper: SQL Error: 0, SQLState: null
+2017-11-14 06:17:35 ERROR [jdk-http-server-0] org.hibernate.engine.jdbc.spi.SqlExceptionHelper: database is locked
+2017-11-14 06:18:17 INFO  [jdk-http-server-0] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-14 06:18:17 INFO  [jdk-http-server-0] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-11-14 06:18:17 INFO  [jdk-http-server-0] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-14 06:18:17 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 06:18:17 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 06:18:17 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 06:18:17 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 06:18:17 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 06:18:17 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 06:18:17 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 06:18:17 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 06:18:17 INFO  [jdk-http-server-0] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 06:18:18 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 06:18:21 WARN  [jdk-http-server-0] org.hibernate.engine.jdbc.spi.SqlExceptionHelper: SQL Error: 0, SQLState: null
+2017-11-14 06:18:21 ERROR [jdk-http-server-0] org.hibernate.engine.jdbc.spi.SqlExceptionHelper: database is locked
+2017-11-14 06:21:36 INFO  [jdk-http-server-0] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-14 06:21:36 INFO  [jdk-http-server-0] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-11-14 06:21:37 INFO  [jdk-http-server-0] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-14 06:21:37 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 06:21:37 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 06:21:37 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 06:21:37 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 06:21:37 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 06:21:37 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 06:21:37 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 06:21:37 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 06:21:37 INFO  [jdk-http-server-0] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 06:21:37 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 06:21:41 WARN  [jdk-http-server-0] org.hibernate.engine.jdbc.spi.SqlExceptionHelper: SQL Error: 0, SQLState: null
+2017-11-14 06:21:41 ERROR [jdk-http-server-0] org.hibernate.engine.jdbc.spi.SqlExceptionHelper: database is locked
+2017-11-14 06:22:42 INFO  [jdk-http-server-0] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-14 06:22:42 INFO  [jdk-http-server-0] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-11-14 06:22:42 INFO  [jdk-http-server-0] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-14 06:22:42 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 06:22:42 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 06:22:42 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 06:22:42 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 06:22:42 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 06:22:42 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 06:22:42 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 06:22:42 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 06:22:42 INFO  [jdk-http-server-0] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 06:22:43 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 06:45:11 INFO  [jdk-http-server-0] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-14 06:45:11 INFO  [jdk-http-server-0] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-11-14 06:45:11 INFO  [jdk-http-server-0] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-14 06:45:11 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 06:45:11 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 06:45:11 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 06:45:11 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 06:45:11 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 06:45:11 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 06:45:11 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 06:45:11 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 06:45:12 INFO  [jdk-http-server-0] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 06:45:12 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-14 06:50:09 INFO  [jdk-http-server-0] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-14 06:50:09 INFO  [jdk-http-server-0] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-11-14 06:50:09 INFO  [jdk-http-server-0] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-14 06:50:10 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 06:50:10 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-14 06:50:10 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-14 06:50:10 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-14 06:50:10 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-14 06:50:10 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-14 06:50:10 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-14 06:50:10 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-14 06:50:10 INFO  [jdk-http-server-0] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-11-14 06:50:10 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-15 02:28:10 INFO  [jdk-http-server-0] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-15 02:28:10 INFO  [jdk-http-server-0] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-11-15 02:28:10 INFO  [jdk-http-server-0] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-15 02:28:10 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-15 02:28:10 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-15 02:28:10 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-15 02:28:10 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-15 02:28:10 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-15 02:28:10 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-15 02:28:10 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-15 02:28:10 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-15 02:28:11 INFO  [jdk-http-server-0] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-11-15 02:28:11 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-15 03:58:47 INFO  [jdk-http-server-0] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-15 03:58:47 INFO  [jdk-http-server-0] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-11-15 03:58:47 INFO  [jdk-http-server-0] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-15 03:58:47 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-15 03:58:47 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-15 03:58:47 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-15 03:58:47 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-15 03:58:47 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-15 03:58:47 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-15 03:58:47 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-15 03:58:47 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-15 03:58:48 INFO  [jdk-http-server-0] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-11-15 03:58:48 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-15 03:58:48 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-15 03:58:48 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-15 03:58:48 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-15 03:58:48 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-15 03:58:48 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-15 03:58:48 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-15 03:58:48 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-15 03:58:49 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-15 03:58:57 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-15 03:58:57 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-15 03:58:57 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-15 03:58:57 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-15 03:58:57 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-15 03:58:57 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-15 03:58:57 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-15 03:58:57 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-15 03:58:57 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-15 03:58:57 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-15 03:58:57 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-15 03:58:57 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-15 03:58:57 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-15 03:58:57 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-15 03:58:57 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-15 03:58:57 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-15 03:59:38 INFO  [jdk-http-server-0] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-15 03:59:38 INFO  [jdk-http-server-0] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-11-15 03:59:38 INFO  [jdk-http-server-0] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-15 03:59:38 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-15 03:59:38 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-15 03:59:38 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-15 03:59:38 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-15 03:59:38 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-15 03:59:38 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-15 03:59:38 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-15 03:59:38 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-15 03:59:39 INFO  [jdk-http-server-0] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-11-15 03:59:39 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-15 03:59:39 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-15 03:59:39 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-15 03:59:39 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-15 03:59:39 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-15 03:59:39 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-15 03:59:39 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-15 03:59:39 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-15 03:59:39 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-15 04:01:36 INFO  [jdk-http-server-0] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-15 04:01:36 INFO  [jdk-http-server-0] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-11-15 04:01:36 INFO  [jdk-http-server-0] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-15 04:01:36 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-15 04:01:36 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-15 04:01:36 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-15 04:01:36 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-15 04:01:36 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-15 04:01:36 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-15 04:01:37 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-15 04:01:37 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-15 04:01:37 INFO  [jdk-http-server-0] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-11-15 04:01:37 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-15 04:01:38 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-15 04:01:38 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-15 04:01:38 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-15 04:01:38 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-15 04:01:38 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-15 04:01:38 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-15 04:01:38 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-15 04:01:38 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-15 04:02:20 INFO  [jdk-http-server-0] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-15 04:02:20 INFO  [jdk-http-server-0] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-11-15 04:02:20 INFO  [jdk-http-server-0] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-15 04:02:20 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-15 04:02:20 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-15 04:02:20 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-15 04:02:20 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-15 04:02:20 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-15 04:02:20 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-15 04:02:20 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-15 04:02:20 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-15 04:02:20 INFO  [jdk-http-server-0] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-11-15 04:02:21 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-15 04:02:21 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-15 04:02:21 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-15 04:02:21 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-15 04:02:21 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-15 04:02:21 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-15 04:02:21 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-15 04:02:21 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-15 04:02:21 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-15 04:10:32 INFO  [jdk-http-server-0] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-15 04:10:32 INFO  [jdk-http-server-0] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-11-15 04:10:32 INFO  [jdk-http-server-0] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-15 04:10:32 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-15 04:10:32 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-15 04:10:32 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-15 04:10:32 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-15 04:10:32 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-15 04:10:32 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-15 04:10:32 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-15 04:10:32 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-15 04:10:32 INFO  [jdk-http-server-0] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-11-15 04:10:33 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-15 04:10:33 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-15 04:10:33 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-15 04:10:33 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-15 04:10:33 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-15 04:10:33 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-15 04:10:33 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-15 04:10:33 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-15 04:10:33 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-17 03:22:11 INFO  [jdk-http-server-0] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-11-17 03:22:11 INFO  [jdk-http-server-0] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-11-17 03:22:11 INFO  [jdk-http-server-0] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-11-17 03:22:11 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-17 03:22:11 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-17 03:22:11 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-17 03:22:11 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-17 03:22:11 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-17 03:22:11 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-17 03:22:11 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-17 03:22:11 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-17 03:22:12 INFO  [jdk-http-server-0] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-11-17 03:22:12 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-11-17 03:22:13 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-11-17 03:22:13 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:mydb.db]
+2017-11-17 03:22:13 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {user=, password=****}
+2017-11-17 03:22:13 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-11-17 03:22:13 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-11-17 03:22:13 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-11-17 03:22:13 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-11-17 03:22:13 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory

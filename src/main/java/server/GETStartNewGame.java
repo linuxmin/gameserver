@@ -13,26 +13,23 @@ import org.apache.logging.log4j.Logger;
 
 @Path("/startgame")
 public class GETStartNewGame {
-    private static final Logger LOGGER = LogManager.getLogger(GETStartNewGame.class);
+    //private static final Logger LOGGER = LogManager.getLogger(GETStartNewGame.class);
     @GET
     @Path("/{id}")
     @Produces(MediaType.APPLICATION_XML)
     public Response getMsg(@PathParam("id") final Integer id) throws Exception{
         QueryDBOpenGame queryDBOpenGame = new QueryDBOpenGame(id);
-        if(queryDBOpenGame.query()){
+        DBConnection dbConnection = new DBConnection();
+        /*if(queryDBOpenGame.query()){
             return Response.status(Response.Status.ACCEPTED).build();
-        }
+        }*/
         Integer game_id = queryDBOpenGame.query(id);
+        Game game = new Game();
         Map map = new Map();
         map.setPlayer_id(id);
         map.setGame_id(game_id);
-       // new WriteToDB(map);
-        DBConnection dbConnection = new DBConnection();
-        dbConnection.write(map);
-        if(dbConnection.query())
+        new WriteToDB(map);
         return Response.status(Response.Status.OK).type(MediaType.APPLICATION_XML).entity(map).build();
-        else
-            return Response.status(Response.Status.ACCEPTED).build();
 
     }
 }

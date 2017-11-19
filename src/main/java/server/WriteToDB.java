@@ -19,7 +19,7 @@ public class WriteToDB {
 
 
 
-    public WriteToDB(Object object)
+    public WriteToDB(DBObject dbObject)
     {
 
 
@@ -30,7 +30,7 @@ public class WriteToDB {
         try{
             session = sessionFactory.openSession();
             tx = session.beginTransaction();
-            session.save(object);
+            session.save(dbObject);
             session.flush();
             tx.commit();
         } catch (Exception e) {
