@@ -18,7 +18,7 @@ public class POSTDaoTest {
 
         try {
             PerformJPAActions.startTransaction(entityManager);
-            playerDAO.createPlayer(player);;
+            playerDAO.createPlayer(player);
             PerformJPAActions.commitTransaction(entityManager);
         }finally{
             entityManagerFactory.close();

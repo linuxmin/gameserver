@@ -24,26 +24,22 @@ public class GETStartNewGame {
         final EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("gameserver");
         final EntityManager entityManager = entityManagerFactory.createEntityManager();
         final GameDAO gameDAO = new GameDAO(entityManager);
-        final PlayerDAO playerDAO = new PlayerDAO(entityManager);
+        Integer game_id = null;
+        Game game = new Game();
         try {
-                PerformJPAActions.startTransaction(entityManager);
-                //Player player = new Player(1234,"lkdfj","dsfsdf",23,"sdfj");
-                Player player = playerDAO.findPlayerByID(id);
-                Game game = new Game(player);
-                entityManager.detach(player);
-                gameDAO.createGame(game);
-                PerformJPAActions.commitTransaction(entityManager);
-                return Response.status(Response.Status.OK).type(MediaType.APPLICATION_XML).entity(game).build();
-
-
+            if(id == 1) {
+                game = gameDAO.createGame(game);
+                game_id = game.getGame_id();
+                return Response.status(Response.Status.OK).type(MediaType.TEXT_PLAIN_TYPE).entity(game_id).build();
             }
-          //  PerformJPAActions.startTransaction(entityManager);
-          //  Game game = gameDAO.findOpenGame(id);
-         //   PerformJPAActions.commitTransaction(entityManager);
+            else{
+                game_id=gameDAO.findOpenGame();
+                return Response.status(Response.Status.OK).type(MediaType.TEXT_PLAIN_TYPE).entity(game_id).build();
+            }
+        }
         finally{
             entityManager.close();
             entityManagerFactory.close();
         }
-
     }
 }

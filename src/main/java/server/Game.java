@@ -15,12 +15,12 @@ import java.time.Clock;
 @NamedQueries({
         @NamedQuery(
                 name = "get_open_game",
-                query = "from Game where player2_id = null"
+                query = "select max (game_id) from Game"
         ),
 
         @NamedQuery(
                 name = "get_game_id_player",
-                query = "from Game where player1_id = :id or player2_id =:id"
+                query = "from Game where winner_id = :id or player2_id =:id"
         )
 
 
@@ -33,12 +33,9 @@ public class Game extends DBObject {
     @XmlElement(name="game_id")
     @Column(name="game_id")
     private Integer game_id;
-    @XmlElement(name="player1_id")
-    @Column(name="player1_id")
-    private Integer player1_id;
-    @XmlElement(name="player2_id")
-    @Column(name="player2_id")
-    private Integer player2_id;
+    @XmlElement(name="winner_id")
+    @Column(name="winner_id")
+    private Integer winner_id;
     @XmlElement(name="time_start")
     @Column(name="time_start")
     private final String time_start = new Timestamp(System.currentTimeMillis()).toString();
@@ -49,20 +46,12 @@ public class Game extends DBObject {
     @Column(name = "end_code")
     private Integer end_code;
 
-    Game() {} //empty constructor for
+    Game() {} //empty constructor for hibernate
 
     Game(Integer game_id){
         this.game_id = game_id;
     }
 
-    Game(Integer player1_id,Integer player2_id){
-        this.player1_id = player1_id;
-        this.player2_id =player2_id;
-    }
-
-    Game(Player player){
-        this.player1_id = player.getPlayer_id();
-    }
 
 
     Game( String time_end, Integer end_code){
@@ -99,21 +88,15 @@ public class Game extends DBObject {
         this.end_code = end_code;
     }
 
-    public Integer getPlayer1_id() {
-        return player1_id;
+    public Integer getWinner_id() {
+        return winner_id;
     }
 
-    public void setPlayer1_id(Integer player1_id) {
-        this.player1_id = player1_id;
+    public void setWinner_id(Integer winner_id) {
+        this.winner_id = winner_id;
     }
 
-    public Integer getPlayer2_id() {
-        return player2_id;
-    }
 
-    public void setPlayer2_id(Integer player2_id) {
-        this.player2_id = player2_id;
-    }
 }
 
 

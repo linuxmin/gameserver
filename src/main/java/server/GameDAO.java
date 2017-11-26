@@ -12,7 +12,14 @@ public final class GameDAO {
 
     //CREATE
     public Game createGame(final Game game) {
-        entityManager.persist(game);
+        try {
+            entityManager.getTransaction().begin();
+            entityManager.persist(game);
+            entityManager.getTransaction().commit();
+        }catch(Exception e){
+            entityManager.getTransaction().rollback();
+        }
+
         return game;
     }
 
@@ -21,19 +28,18 @@ public final class GameDAO {
         return entityManager.find(Game.class, game_id);
     }
 
-    public boolean findOpenGame(final Integer player_id) {
-        try {
-            Game game = entityManager.createNamedQuery("get_open_game", Game.class)
-                    .getSingleResult();
-            PerformJPAActions.startTransaction(this.entityManager);
-            game.setPlayer2_id(player_id);
-            PerformJPAActions.commitTransaction(this.entityManager);
-            return true;
-        }catch(javax.persistence.NoResultException e){
-            return false;
+    public Integer findOpenGame(){
+        Integer game_id = 3;
+        try{
+
+            game_id = entityManager.createNamedQuery("get_open_game", Integer.class).getSingleResult();
+            //game_id = game.getGame_id();
+            return game_id;
+        }catch(Exception e){
+            e.printStackTrace();
+            return 0;
         }
     }
-
 
     //UPDATE (still empty)
 

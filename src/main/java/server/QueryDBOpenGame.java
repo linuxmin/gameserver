@@ -36,7 +36,7 @@ public class QueryDBOpenGame {
             Game game = session.createNamedQuery("get_open_game", Game.class)
                     .getSingleResult();
             LOGGER.debug(game);
-            game.setPlayer2_id(player.getPlayer_id());
+         //   game.setPlayer2_id(player.getPlayer_id());
             session.save(game);
              session.flush();
             tx.commit();
