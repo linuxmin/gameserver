@@ -1,5 +1,8 @@
 package server;
 
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
@@ -18,18 +21,29 @@ public class GETStartNewGame {
     @Path("/{id}")
     @Produces(MediaType.APPLICATION_XML)
     public Response getMsg(@PathParam("id") final Integer id) throws Exception{
-        QueryDBOpenGame queryDBOpenGame = new QueryDBOpenGame(id);
-        DBConnection dbConnection = new DBConnection();
-        /*if(queryDBOpenGame.query()){
-            return Response.status(Response.Status.ACCEPTED).build();
-        }*/
-        Integer game_id = queryDBOpenGame.query(id);
-        Game game = new Game();
-        Map map = new Map();
-        map.setPlayer_id(id);
-        map.setGame_id(game_id);
-        new WriteToDB(map);
-        return Response.status(Response.Status.OK).type(MediaType.APPLICATION_XML).entity(map).build();
+        final EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("gameserver");
+        final EntityManager entityManager = entityManagerFactory.createEntityManager();
+        final GameDAO gameDAO = new GameDAO(entityManager);
+        final PlayerDAO playerDAO = new PlayerDAO(entityManager);
+        try {
+                PerformJPAActions.startTransaction(entityManager);
+                //Player player = new Player(1234,"lkdfj","dsfsdf",23,"sdfj");
+                Player player = playerDAO.findPlayerByID(id);
+                Game game = new Game(player);
+                entityManager.detach(player);
+                gameDAO.createGame(game);
+                PerformJPAActions.commitTransaction(entityManager);
+                return Response.status(Response.Status.OK).type(MediaType.APPLICATION_XML).entity(game).build();
+
+
+            }
+          //  PerformJPAActions.startTransaction(entityManager);
+          //  Game game = gameDAO.findOpenGame(id);
+         //   PerformJPAActions.commitTransaction(entityManager);
+        finally{
+            entityManager.close();
+            entityManagerFactory.close();
+        }
 
     }
 }

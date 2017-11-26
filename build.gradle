@@ -44,6 +44,7 @@ dependencies {
     compile 'org.hibernate:hibernate-core:5.2.11.Final'
     //JPA if used
     compile 'org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final'
+    compile 'org.hibernate:hibernate-entitymanager:4.3.10.Final'
 
     compile 'com.zsoltfabok:sqlite-dialect:1.0'
     compile 'org.xerial:sqlite-jdbc:3.7.2'

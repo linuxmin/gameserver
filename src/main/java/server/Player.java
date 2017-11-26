@@ -7,6 +7,8 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table
