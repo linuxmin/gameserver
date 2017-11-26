@@ -29,12 +29,13 @@ public class GETStartNewGame {
         try {
             if(id == 1) {
                 game = gameDAO.createGame(game);
-                game_id = game.getGame_id();
-                return Response.status(Response.Status.OK).type(MediaType.TEXT_PLAIN_TYPE).entity(game_id).build();
+                //game_id = game.getGame_id();
+                return Response.status(Response.Status.OK).type(MediaType.APPLICATION_XML_TYPE).entity(game).build();
             }
             else{
                 game_id=gameDAO.findOpenGame();
-                return Response.status(Response.Status.OK).type(MediaType.TEXT_PLAIN_TYPE).entity(game_id).build();
+                game.setGame_id(game_id);
+                return Response.status(Response.Status.OK).type(MediaType.APPLICATION_XML_TYPE).entity(game).build();
             }
         }
         finally{

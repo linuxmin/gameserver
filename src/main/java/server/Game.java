@@ -1,6 +1,8 @@
 package server;
 
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.persistence.NamedQueries;
@@ -11,7 +13,8 @@ import java.time.Clock;
 
 @Entity
 @Table(name="game")
-@XmlRootElement(name = "registernewplayer")
+@XmlRootElement(name = "game")
+@XmlAccessorType(XmlAccessType.FIELD)
 @NamedQueries({
         @NamedQuery(
                 name = "get_open_game",
