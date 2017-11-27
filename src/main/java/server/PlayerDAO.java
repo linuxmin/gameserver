@@ -12,7 +12,15 @@ public final class PlayerDAO {
 
     //CREATE
     public Player createPlayer(final Player player){
-        entityManager.persist(player);
+        try {
+            entityManager.getTransaction().begin();
+            entityManager.persist(player);
+            entityManager.getTransaction().commit();
+        }catch(Exception e){
+            e.printStackTrace();
+            entityManager.getTransaction().rollback();
+        }
+
         return player;
     }
 
@@ -21,7 +29,14 @@ public final class PlayerDAO {
         return entityManager.find(Player.class,player_id);
     }
 
-    //UPDATE (still empty)
+    //UPDATE (still empty
+    public void insertPlayerData(Player player){
+        Player player2 = findPlayerByID(player.getPlayer_id());
+        player2.setPlayerProperties(player);
+        createPlayer(player2);
+        System.out.println(player2.getFirst_name());
+
+    }
 
     //DELETE
     public void deletePlayerByID(final Integer player_id) {

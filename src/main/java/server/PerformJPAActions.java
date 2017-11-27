@@ -15,7 +15,7 @@ public class PerformJPAActions {
         try {
             entityManager.getTransaction().commit();
         }catch(Exception e){
-            entityManager.getTransaction().rollback();
+
         }finally{
             entityManager.close();
         }

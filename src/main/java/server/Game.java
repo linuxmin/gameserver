@@ -10,6 +10,8 @@ import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import java.sql.Timestamp;
 import java.time.Clock;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name="game")
@@ -48,6 +50,10 @@ public class Game extends DBObject {
     @XmlElement(name = "end_code")
     @Column(name = "end_code")
     private Integer end_code;
+
+    @OneToMany(cascade=CascadeType.ALL)
+    @JoinColumn(name="game_id")
+    private List<Player> players = new ArrayList<>();
 
     Game() {} //empty constructor for hibernate
 
@@ -98,6 +104,11 @@ public class Game extends DBObject {
     public void setWinner_id(Integer winner_id) {
         this.winner_id = winner_id;
     }
+
+    public List<Player> getPlayer(){
+        return this.players;
+    }
+
 
 
 }

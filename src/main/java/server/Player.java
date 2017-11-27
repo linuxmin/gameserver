@@ -3,6 +3,8 @@ package server; /**
  */
 
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.persistence.NamedQueries;
@@ -13,6 +15,7 @@ import java.util.List;
 @Entity
 @Table
 @XmlRootElement(name = "registernewplayer")
+@XmlAccessorType(XmlAccessType.FIELD)
 @NamedQueries({
         @NamedQuery(
                 name = "get_player_by_first_name",
@@ -48,8 +51,11 @@ public class Player extends DBObject {
     @Column(name="nickname")
     private String nickname;
 
-    @Transient
+    @XmlElement(name="game_id")
+    @Column(name="game_id")
     private Integer game_id;
+
+
 
 
     @Transient
@@ -57,6 +63,9 @@ public class Player extends DBObject {
 
     Player(){}  //default constructor for hibernate
 
+    Player(Game game) {
+
+    }
 
     Player(Integer player_id, String first_name, String last_name, Integer age, String nickname){
    //     init(player_id,first_name,last_name,age,nickname);
@@ -96,8 +105,8 @@ public class Player extends DBObject {
     }
 
     public Integer getGame_id() {
-        return game_id;
-    }
+       return game_id;
+   }
 
     public void setGame_id(Integer game_id) {
         this.game_id = game_id;
@@ -109,5 +118,28 @@ public class Player extends DBObject {
 
     public void setMap_id(Integer map_id) {
         this.map_id = map_id;
+    }
+
+    public void setFirst_name(String first_name) {
+        this.first_name = first_name;
+    }
+
+    public void setLast_name(String last_name) {
+        this.last_name = last_name;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
+    }
+
+    public void setPlayerProperties(Player player){
+        this.first_name = player.first_name;
+        this.last_name = player.last_name;
+        this.age = player.age;
+        this.nickname = player.nickname;
     }
 }
