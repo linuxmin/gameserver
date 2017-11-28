@@ -17,6 +17,7 @@ public final class GameDAO {
             entityManager.persist(game);
             entityManager.getTransaction().commit();
         }catch(Exception e){
+            e.printStackTrace();
             entityManager.getTransaction().rollback();
         }
 
@@ -42,6 +43,13 @@ public final class GameDAO {
     }
 
     //UPDATE (still empty)
+
+    public void iterateGamePlayerNo(Integer game_id){
+        Game game = findGameByID(game_id);
+        game.setPlayers_no();
+        System.out.println(game.getGame_id());
+        createGame(game);
+    }
 
     //DELETE
     public void deleteGameByID(final Integer game_id) {

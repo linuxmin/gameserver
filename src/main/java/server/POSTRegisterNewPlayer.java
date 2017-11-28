@@ -15,11 +15,11 @@ public class POSTRegisterNewPlayer {
         final EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("gameserver");
         final EntityManager entityManager = entityManagerFactory.createEntityManager();
         final PlayerDAO playerDAO = new PlayerDAO(entityManager);
+        final GameDAO gameDAO = new GameDAO(entityManager);
         try {
-            //Player player2 = playerDAO.findPlayerByID(player.getPlayer_id());
             playerDAO.insertPlayerData(player);
-
-            return Response.status(200).type(MediaType.APPLICATION_XML).entity(player).build();
+            gameDAO.iterateGamePlayerNo(player.getGame_id());
+           return Response.status(200).type(MediaType.APPLICATION_XML).entity(player).build();
         }finally{
             entityManager.close();
             entityManagerFactory.close();

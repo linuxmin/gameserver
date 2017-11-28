@@ -35,8 +35,9 @@ public final class PlayerDAO {
         player2.setPlayerProperties(player);
         createPlayer(player2);
         System.out.println(player2.getFirst_name());
-
     }
+
+
 
     //DELETE
     public void deletePlayerByID(final Integer player_id) {

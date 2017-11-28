@@ -51,6 +51,11 @@ public class Game extends DBObject {
     @Column(name = "end_code")
     private Integer end_code;
 
+    @XmlElement(name="players_no")
+    @Column(name="players_no")
+    private Integer players_no=0;
+
+
     @OneToMany(cascade=CascadeType.ALL)
     @JoinColumn(name="game_id")
     private List<Player> players = new ArrayList<>();
@@ -103,6 +108,14 @@ public class Game extends DBObject {
 
     public void setWinner_id(Integer winner_id) {
         this.winner_id = winner_id;
+    }
+
+    public Integer getPlayers_no() {
+        return players_no;
+    }
+
+    public void setPlayers_no() {
+        this.players_no = this.players_no + 1;
     }
 
     public List<Player> getPlayer(){
