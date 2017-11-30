@@ -42,7 +42,7 @@ public final class GameDAO {
         }
     }
 
-    //UPDATE (still empty)
+    //UPDATE
 
     public void iterateGamePlayerNo(Integer game_id){
         Game game = findGameByID(game_id);

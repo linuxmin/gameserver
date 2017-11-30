@@ -31,7 +31,7 @@ import java.util.List;
 
 })
 
-public class Game extends DBObject {
+public class Game{
     @Id
     @GeneratedValue(generator = "sqlite")
     @TableGenerator(name="sqlite", table="sqlite_sequence",pkColumnName = "name", valueColumnName = "seq", pkColumnValue = "game", initialValue=1, allocationSize=1)

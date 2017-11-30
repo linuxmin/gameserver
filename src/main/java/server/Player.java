@@ -27,7 +27,7 @@ import java.util.List;
                 query = "from Player where player_id = :id"
         )
 })
-public class Player extends DBObject {
+public class Player{
     @Id
     @GeneratedValue(generator = "sqlite")
     @TableGenerator(name="sqlite", table="sqlite_sequence",pkColumnName = "name", valueColumnName = "seq", pkColumnValue = "Player", initialValue=1, allocationSize=1)
