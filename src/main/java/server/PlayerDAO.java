@@ -25,12 +25,12 @@ public final class PlayerDAO {
     }
 
     //READ
-    public Player findPlayerByID(final Integer player_id){
+    public Player findPlayerByID(final Integer player_id) throws Exception{
         return entityManager.find(Player.class,player_id);
     }
 
     //UPDATE (still empty
-    public void insertPlayerData(Player player){
+    public void insertPlayerData(Player player) throws Exception{
         Player player2 = findPlayerByID(player.getPlayer_id());
         player2.setPlayerProperties(player);
         createPlayer(player2);
@@ -40,7 +40,7 @@ public final class PlayerDAO {
 
 
     //DELETE
-    public void deletePlayerByID(final Integer player_id) {
+    public void deletePlayerByID(final Integer player_id) throws Exception{
         final Player player = findPlayerByID(player_id);
         if (player != null) {
             entityManager.remove(player);

@@ -20,7 +20,19 @@ public class POSTRegisterNewPlayer {
             playerDAO.insertPlayerData(player);
             gameDAO.iterateGamePlayerNo(player.getGame_id());
            return Response.status(200).type(MediaType.APPLICATION_XML).entity(player).build();
-        }finally{
+        }catch(java.lang.NullPointerException e){
+            e.printStackTrace();
+            Error error = new Error();
+            error.setMessage("Missing attributes for Player");
+            return Response.status(Response.Status.EXPECTATION_FAILED).type(MediaType.APPLICATION_XML).entity(error).build();
+        }catch(java.lang.Exception e){
+            e.printStackTrace();
+            Error error = new Error();
+            error.setMessage(e.toString());
+            return Response.status(Response.Status.EXPECTATION_FAILED).type(MediaType.APPLICATION_XML).entity(error).build();
+        }
+
+        finally{
             entityManager.close();
             entityManagerFactory.close();
         }

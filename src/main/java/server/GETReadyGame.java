@@ -36,15 +36,17 @@ public class GETReadyGame {
             player_no = game.getPlayers_no();
             if(player_no == 2) {
                 Map map = new Map();
-                map.setGame_id(player.getGame_id());
-                map.setPlayer_id(player.getPlayer_id());
+                map = mapDAO.findMapByID(player.getMap_id());
+                //map.setGame_id(player.getGame_id());
+                //map.setPlayer_id(player.getPlayer_id());
+                /*
                 if (mapDAO.findOpenMapByPlayerID(player.getPlayer_id()) == 0) {
-                    mapDAO.createMap(map);
+                    mapDAO.createMap(map);*/
                     return Response.status(Response.Status.OK).type(MediaType.APPLICATION_XML_TYPE).entity(map).build();
-                }else{
+                /*}else{
                     map.setMap_id(mapDAO.findOpenMapByPlayerID(player.getPlayer_id()));
                     return Response.status(Response.Status.CREATED).type(MediaType.APPLICATION_XML_TYPE).entity(map).build();
-                }
+                }*/
             }
             else
             return Response.status(Response.Status.NO_CONTENT).type(MediaType.APPLICATION_XML_TYPE).entity(player).build();

@@ -25,26 +25,19 @@ public final class GameDAO {
     }
 
     //READ
-    public Game findGameByID(final Integer game_id) {
+    public Game findGameByID(final Integer game_id) throws Exception {
         return entityManager.find(Game.class, game_id);
     }
 
-    public Integer findOpenGame(){
-        Integer game_id = 3;
-        try{
-
-            game_id = entityManager.createNamedQuery("get_open_game", Integer.class).getSingleResult();
-            //game_id = game.getGame_id();
-            return game_id;
-        }catch(Exception e){
-            e.printStackTrace();
-            return 0;
-        }
+    public Integer findOpenGame() throws  Exception{
+        Integer game_id = 0;
+        game_id= entityManager.createNamedQuery("get_open_game", Integer.class).getSingleResult();
+        return game_id;
     }
 
     //UPDATE
 
-    public void iterateGamePlayerNo(Integer game_id){
+    public void iterateGamePlayerNo(Integer game_id) throws Exception{
         Game game = findGameByID(game_id);
         game.setPlayers_no();
         System.out.println(game.getGame_id());
@@ -52,7 +45,7 @@ public final class GameDAO {
     }
 
     //DELETE
-    public void deleteGameByID(final Integer game_id) {
+    public void deleteGameByID(final Integer game_id) throws Exception {
         final Game game = findGameByID(game_id);
         if (game != null) {
             entityManager.remove(game);

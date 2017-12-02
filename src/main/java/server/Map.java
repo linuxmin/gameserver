@@ -9,6 +9,9 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.persistence.OneToMany;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table
@@ -36,6 +39,10 @@ public class Map{
     @Column(name="player_id")
     private Integer player_id;
 
+  //  @OneToMany(mappedBy = "mappingmap")
+  //  private List<Tile> tiles;
+
+
 
 
     Map(){}  //default constructor for hibernate
@@ -45,6 +52,10 @@ public class Map{
         this.game_id = game_id;
         this.player_id = player_id;
     }
+
+   /* public Map(Tile tile){
+        this.tiles.add(tile);
+    }*/
 
     public Integer getMap_id() {
         return map_id;
@@ -69,4 +80,8 @@ public class Map{
     public void setPlayer_id(Integer player_id) {
         this.player_id = player_id;
     }
+
+ /*   public List<Tile> getTiles(){
+        return this.tiles;
+    }*/
 }

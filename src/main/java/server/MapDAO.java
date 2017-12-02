@@ -26,6 +26,12 @@ public final class MapDAO {
 
     //READ
     public Map findMapByID(final Integer map_id){
+        try{
+            Map map = entityManager.find(Map.class,map_id);
+            return map;
+        }catch(Exception e){
+            e.printStackTrace();
+        }
         return entityManager.find(Map.class,map_id);
     }
 
@@ -42,8 +48,26 @@ public final class MapDAO {
     }
 
     //UPDATE (still empty
+    public void insertTiles(TileList tileList){
+        Integer count = tileList.getTiles().size();
+        Map map = new Map();
+        map=findMapByID(115);
+        try {
+            entityManager.getTransaction().begin();
+            //Map map = new Map();
+            //map = findMapByID(115);
+            //System.out.println(map.getMap_id());
+            //map.getTiles().add(tile);
+            //entityManager.persist(map);
+           // entityManager.merge(tile);
+            //entityManager.getTransaction().commit();
+            //entityManager.flush();
 
-
+        }catch(Exception e){
+            e.printStackTrace();
+            entityManager.getTransaction().rollback();
+        }
+    }
 
     //DELETE
     public void deleteMapByID(final Integer map_id) {

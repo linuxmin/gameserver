@@ -56,9 +56,7 @@ public class Game{
     private Integer players_no=0;
 
 
-    @OneToMany(cascade=CascadeType.ALL)
-    @JoinColumn(name="game_id")
-    private List<Player> players = new ArrayList<>();
+
 
     Game() {} //empty constructor for hibernate
 
@@ -118,9 +116,7 @@ public class Game{
         this.players_no = this.players_no + 1;
     }
 
-    public List<Player> getPlayer(){
-        return this.players;
-    }
+
 
 
 

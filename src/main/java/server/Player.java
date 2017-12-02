@@ -56,9 +56,8 @@ public class Player{
     private Integer game_id;
 
 
-
-
-    @Transient
+    @XmlElement(name="map_id")
+    @Column(name="map_id")
     private Integer map_id;
 
     Player(){}  //default constructor for hibernate
@@ -136,7 +135,7 @@ public class Player{
         this.nickname = nickname;
     }
 
-    public void setPlayerProperties(Player player){
+    public void setPlayerProperties(Player player) throws Exception{
         this.first_name = player.first_name;
         this.last_name = player.last_name;
         this.age = player.age;
