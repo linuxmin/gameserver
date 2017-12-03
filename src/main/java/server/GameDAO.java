@@ -29,10 +29,11 @@ public final class GameDAO {
         return entityManager.find(Game.class, game_id);
     }
 
-    public Integer findOpenGame() throws  Exception{
+    public Game findOpenGame() throws  Exception{
         Integer game_id = 0;
         game_id= entityManager.createNamedQuery("get_open_game", Integer.class).getSingleResult();
-        return game_id;
+        Game game = findGameByID(game_id);
+        return game;
     }
 
     //UPDATE

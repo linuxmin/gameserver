@@ -65,16 +65,22 @@ public class Tile {
    @Column(name="map_id")
     private Integer map_id;
 
-  /*@ManyToOne(fetch = FetchType.LAZY)
-            @JoinColumn(name="map_id")
-            private Map mappingmap;
-*/
+
+
+
 
 
 
     Tile() {
     }  //default constructor for hibernate
 
+    Tile(Tile tile){
+        this.y = tile.getY();
+        this.x = tile.getX();
+        this.castle = tile.getCastle();
+        this.type = tile.getType();
+        this.treasure = tile.getTreasure();
+    }
     public Integer getTile_id() {
         return tile_id;
     }
@@ -135,12 +141,11 @@ public class Tile {
 
 
 
+
    /*
 
-      public void setMappingmap(Map map){
-        this.mappingmap = map;
-        map.getTiles().add(this);
-    }
+
+
 
 
 
@@ -161,13 +166,7 @@ public class Tile {
     public void setPlayer_id(Integer player_id) {
         this.player_id = player_id;
     }
-        public Map getMap() {
-        return tileslist;
-    }
 
-    public void setMap(Map map) {
-        this.tileslist = map;
-    }
 */
 
 

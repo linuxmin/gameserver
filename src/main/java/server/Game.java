@@ -60,8 +60,9 @@ public class Game{
 
     Game() {} //empty constructor for hibernate
 
-    Game(Integer game_id){
-        this.game_id = game_id;
+
+    Game(Game game){
+        this.game_id = game.getGame_id();
     }
 
 

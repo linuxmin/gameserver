@@ -42,10 +42,25 @@ public class Map{
   //  @OneToMany(mappedBy = "mappingmap")
   //  private List<Tile> tiles;
 
+    @OneToMany(cascade = CascadeType.PERSIST)
+            @JoinColumn(name = "map_id")
+            private List<Tile> tiles = new ArrayList<>();
+
 
 
 
     Map(){}  //default constructor for hibernate
+
+
+    Map(Game game){
+       // this.player_id = player.getPlayer_id();
+       this.game_id = game.getGame_id();
+    }
+
+    Map(Player player){
+        this.player_id = player.getPlayer_id();
+        //this.map_id =  map.getMap_id();
+    }
 
     public Map(Integer map_id, Integer game_id, Integer player_id) {
         this.map_id = map_id;
@@ -81,7 +96,8 @@ public class Map{
         this.player_id = player_id;
     }
 
- /*   public List<Tile> getTiles(){
+    public List<Tile> getTiles(){
         return this.tiles;
-    }*/
+    }
+
 }

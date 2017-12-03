@@ -62,8 +62,9 @@ public class Player{
 
     Player(){}  //default constructor for hibernate
 
-    Player(Game game) {
-
+    Player(Map map, Game game) {
+        this.map_id = map.getMap_id();
+        this.game_id = game.getGame_id();
     }
 
     Player(Integer player_id, String first_name, String last_name, Integer age, String nickname){
