@@ -43,6 +43,19 @@ public final class MapDAO {
         }
     }
 
+    public Map findOtherMapByGame_id(Integer map_id) throws Exception{
+        Integer player_id = 0;
+        Map map = new Map();
+        Map other_map = new Map();
+        Integer game_id = 0;
+        map = findMapByID(map_id);
+        game_id = map.getGame_id();
+        player_id=map.getPlayer_id();
+        other_map = entityManager.createNamedQuery("get_other_map", Map.class).setParameter("game_id",game_id).setParameter("player_id",player_id).getSingleResult();
+        return other_map;
+
+    }
+
     //UPDATE (still empty
 
 

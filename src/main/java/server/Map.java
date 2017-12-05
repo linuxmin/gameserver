@@ -10,6 +10,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,6 +22,10 @@ import java.util.List;
         @NamedQuery(
                 name = "get_map_by_player_id",
                 query = "select map_id from Map where player_id = :id"
+        ),
+        @NamedQuery(
+                name = "get_other_map",
+                query ="from Map where game_id = :game_id and not player_id =:player_id"
         )
 })
 public class Map{
@@ -38,6 +43,17 @@ public class Map{
     @XmlElement(name="player_id")
     @Column(name="player_id")
     private Integer player_id;
+
+    @XmlElement(name="time_start_generation")
+    @Column(name="time_start_generation")
+    private Timestamp time_start_generation;
+
+
+
+    @XmlElement(name="time_end_generation")
+    @Column(name="time_end_generation")
+
+    private Timestamp time_end_generation;
 
   //  @OneToMany(mappedBy = "mappingmap")
   //  private List<Tile> tiles;
@@ -100,4 +116,30 @@ public class Map{
         return this.tiles;
     }
 
+    public Timestamp getTime_start_generation() {
+        return time_start_generation;
+    }
+    public void setTime_start_generation(Timestamp time_start_generation) {
+        this.time_start_generation = time_start_generation;
+    }
+
+    public Timestamp getTime_end_generation() {
+        return time_end_generation;
+    }
+
+    public void setTime_end_generation(Timestamp time_end_generation) {
+        this.time_end_generation = time_end_generation;
+    }
+
+    public boolean checkSeconds(){
+        Integer diff = 0;
+        if(this.time_start_generation != null && this.time_end_generation != null){
+            diff = this.time_end_generation.getSeconds() - this.time_end_generation.getSeconds();
+            if(diff > 3){
+                return false;
+            }
+            return true;
+        }
+        return false;
+    }
 }

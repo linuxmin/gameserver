@@ -24,8 +24,8 @@ import java.util.List;
         ),
 
         @NamedQuery(
-                name = "get_game_id_player",
-                query = "from Game where winner_id = :id or player2_id =:id"
+                name = "get_game_id_loser",
+                query = "from Game where loser_id = :id"
         )
 
 
@@ -38,9 +38,13 @@ public class Game{
     @XmlElement(name="game_id")
     @Column(name="game_id")
     private Integer game_id;
+    @XmlElement(name="loser_id")
+    @Column(name="loser_id")
+    private Integer loser_id;
     @XmlElement(name="winner_id")
     @Column(name="winner_id")
     private Integer winner_id;
+
     @XmlElement(name="time_start")
     @Column(name="time_start")
     private final String time_start = new Timestamp(System.currentTimeMillis()).toString();
@@ -99,6 +103,14 @@ public class Game{
 
     public void setEnd_code(Integer end_code) {
         this.end_code = end_code;
+    }
+
+    public Integer getloser_id() {
+        return loser_id;
+    }
+
+    public void setloser_id(Integer loser_id) {
+        this.loser_id = loser_id;
     }
 
     public Integer getWinner_id() {
