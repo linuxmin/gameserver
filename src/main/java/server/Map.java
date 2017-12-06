@@ -84,9 +84,10 @@ public class Map{
         this.player_id = player_id;
     }
 
-   /* public Map(Tile tile){
+    public Map(Tile tile) {
         this.tiles.add(tile);
-    }*/
+    }
+
 
     public Integer getMap_id() {
         return map_id;
@@ -132,9 +133,9 @@ public class Map{
     }
 
     public boolean checkSeconds(){
-        Integer diff = 0;
+        Integer diff=0;
         if(this.time_start_generation != null && this.time_end_generation != null){
-            diff = this.time_end_generation.getSeconds() - this.time_end_generation.getSeconds();
+            diff = this.time_start_generation.getSeconds() - this.time_end_generation.getSeconds();
             if(diff > 3){
                 return false;
             }

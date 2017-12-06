@@ -76,12 +76,9 @@ public class Player{
         this.nickname = nickname;
     }
 
-    private void init(Integer player_id, String first_name, String last_name, Integer age, String nickname){
+
+    public void setPlayer_id(Integer player_id) {
         this.player_id = player_id;
-        this.first_name = first_name;
-        this.last_name = last_name;
-        this.age = age;
-        this.nickname = nickname;
     }
 
     public Integer getPlayer_id(){

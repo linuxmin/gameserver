@@ -47,7 +47,7 @@ public class Game{
 
     @XmlElement(name="time_start")
     @Column(name="time_start")
-    private final String time_start = new Timestamp(System.currentTimeMillis()).toString();
+    private  String time_start = new Timestamp(System.currentTimeMillis()).toString();
     @XmlElement(name="time_end")
     @Column(name="time_end")
     private String time_end;
@@ -84,6 +84,8 @@ public class Game{
     public void setGame_id(Integer game_id) {
         this.game_id = game_id;
     }
+
+    public void setTimeStart(String time_start){this.time_start = time_start;}
 
     public String getTime_start() {
         return time_start;
