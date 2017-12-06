@@ -51,6 +51,7 @@ public final class MapDAO {
         map = findMapByID(map_id);
         game_id = map.getGame_id();
         player_id=map.getPlayer_id();
+        System.out.println(player_id);
         other_map = entityManager.createNamedQuery("get_other_map", Map.class).setParameter("game_id",game_id).setParameter("player_id",player_id).getSingleResult();
         return other_map;
 

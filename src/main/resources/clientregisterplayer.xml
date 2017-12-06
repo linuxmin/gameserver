@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<registernewplayer>
+    <player_id>716</player_id>
+    <first_name>Benjamin</first_name>
+    <last_name>Hartmann</last_name>
+    <age>29</age>
+    <nickname>ElMuldo</nickname>
+    <game_id>103</game_id>
+</registernewplayer>

@@ -9,6 +9,7 @@
         <class>server.Game</class>
         <class>server.Map</class>
         <class>server.Tile</class>
+        <class>server.ActionMove</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.sqlite.JDBC"></property>

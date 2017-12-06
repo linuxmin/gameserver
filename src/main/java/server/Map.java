@@ -25,7 +25,7 @@ import java.util.List;
         ),
         @NamedQuery(
                 name = "get_other_map",
-                query ="from Map where game_id = :game_id and not player_id =:player_id"
+                query ="from Map where game_id = :game_id and  player_id <> :player_id"
         )
 })
 public class Map{
@@ -133,9 +133,9 @@ public class Map{
     }
 
     public boolean checkSeconds(){
-        Integer diff=0;
+        Long diff;
         if(this.time_start_generation != null && this.time_end_generation != null){
-            diff = this.time_start_generation.getSeconds() - this.time_end_generation.getSeconds();
+            diff = (this.time_start_generation.getTime() - this.time_end_generation.getTime())/1000;
             if(diff > 3){
                 return false;
             }

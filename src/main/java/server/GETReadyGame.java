@@ -3,6 +3,7 @@ package server;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
+import javax.validation.constraints.Null;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
@@ -35,22 +36,20 @@ public class GETReadyGame {
             System.out.println(game.getPlayers_no());
             player_no = game.getPlayers_no();
             if(player_no == 2) {
-                Map map = new Map();
-                map = mapDAO.findMapByID(player.getMap_id());
-                //map.setGame_id(player.getGame_id());
-                //map.setPlayer_id(player.getPlayer_id());
-                /*
-                if (mapDAO.findOpenMapByPlayerID(player.getPlayer_id()) == 0) {
-                    mapDAO.createMap(map);*/
-                    return Response.status(Response.Status.OK).type(MediaType.APPLICATION_XML_TYPE).entity(map).build();
+                return Response.status(Response.Status.OK).build();
                 /*}else{
                     map.setMap_id(mapDAO.findOpenMapByPlayerID(player.getPlayer_id()));
                     return Response.status(Response.Status.CREATED).type(MediaType.APPLICATION_XML_TYPE).entity(map).build();
                 }*/
             }
             else
-            return Response.status(Response.Status.NO_CONTENT).type(MediaType.APPLICATION_XML_TYPE).entity(player).build();
+            return Response.status(Response.Status.NO_CONTENT).type(MediaType.APPLICATION_XML_TYPE).build();
 
+        }catch(NullPointerException e){
+            Error error = new Error();
+            error.setMessage("Player not registered in a Game");
+            e.printStackTrace();
+            return Response.status(Response.Status.EXPECTATION_FAILED).entity(error).build();
         }
         finally{
             entityManager.close();

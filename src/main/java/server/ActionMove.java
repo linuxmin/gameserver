@@ -9,19 +9,32 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import java.sql.Time;
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table
+@Table(name="action")
 @XmlRootElement(name = "sendaction")
 @XmlAccessorType(XmlAccessType.FIELD)
-/*@NamedQueries({
+@NamedQueries({
         @NamedQuery(
-                name = "get_action_by_player_id",
-                query = "select action_id from Action where player_id = :id"
+                name = "get_last_move",
+                query = "select max (action_id) from ActionMove"
+        ),
+        @NamedQuery(
+                name = "count_actions",
+                query = "SELECT count (action_id) from ActionMove where game_id = :game_id"
+        ),
+        @NamedQuery(
+                name = "get_last_move_player",
+                query = "select max (action_id) from ActionMove where player_id = :player_id"
         )
-})*/
+
+
+})
+
 public class ActionMove {
     @Id
     @GeneratedValue(generator = "sqlite")
@@ -66,12 +79,19 @@ public class ActionMove {
 
     @XmlElement(name = "inventory")
     @Column(name = "inventory")
-    private Integer inventory;
-    
+    private Integer inventory = 0;
+
+    @XmlElement(name = "won")
+    @Column(name = "won")
+    private Integer won = 0;
 
 
     ActionMove() {
     }  //default constructor for hibernate
+
+    ActionMove(Game game){
+        this.game_id = game.getGame_id();
+    }
 
     public Integer getAction_id() {
         return action_id;
@@ -152,5 +172,41 @@ public class ActionMove {
 
     public void setInventory(Integer inventory) {
         this.inventory = inventory;
+    }
+
+    public void setProperties(ActionMove actionMove){
+        this.setGame_id(actionMove.getGame_id());
+        this.setWon(actionMove.getWon());
+        this.setInventory(actionMove.getInventory());
+        this.setActions_left(actionMove.getActions_left());
+        this.setMap_id(actionMove.getMap_id());
+        this.setTarget_tile(actionMove.getTarget_tile());
+        this.setStart_tile(actionMove.getStart_tile());
+        this.setTime_start(actionMove.getTime_start());
+        this.setTime_end(actionMove.getTime_end());
+        this.setPlayer_id(actionMove.getPlayer_id());
+    }
+
+    public Integer getWon() {
+        return won;
+    }
+
+    public void setWon(Integer won) {
+        this.won = won;
+    }
+
+    public boolean checkSeconds(){
+        Long diff;
+        Timestamp start = new Timestamp(this.getTime_start());
+        Timestamp end = new Timestamp(this.getTime_end());
+        if(this.getTime_start() != null && this.getTime_end() != null){
+            diff = (end.getTime()- start.getTime())/1000;
+            System.out.println("FUCK" + diff);
+            if(diff > 3){
+                return false;
+            }
+            return true;
+        }
+        return false;
     }
 }

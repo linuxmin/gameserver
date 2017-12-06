@@ -40,7 +40,7 @@ public class Game{
     private Integer game_id;
     @XmlElement(name="loser_id")
     @Column(name="loser_id")
-    private Integer loser_id;
+    private Integer loser_id = 0;
     @XmlElement(name="winner_id")
     @Column(name="winner_id")
     private Integer winner_id;

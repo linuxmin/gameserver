@@ -80,7 +80,7 @@ public class POSTMapTiles {
                     break;
             }
         }
-        if(mapsize != 12 || mountain < 3 || grass < 5 || water < 4 || borderwater > 3 || islandwater > 0 || !hascstle || !hastreasure){      //auf 32 zurücksetzen
+        if(mapsize != 32 || mountain < 3 || grass < 5 || water < 4 || borderwater > 3 || islandwater > 0 || !hascstle || !hastreasure){      //auf 32 zurücksetzen
             Error error = new Error();
             error.setMessage("Violated Map Rules! mapsize: " + mapsize + " Mountains: " + mountain + " Grass: " + grass + " Water: " + water + " Borderwater: " +borderwater + "Possible island: " + islandwater);
             return Response.status(Response.Status.EXPECTATION_FAILED).entity(error).build();
