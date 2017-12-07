@@ -28,9 +28,8 @@ public class POSTMapTiles {
         Integer borderwater=0;
         Integer islandwater = 0;
         Integer treasure = 0;
-        Integer castle = 0;
+        Integer castlewater = 0;
         Boolean hastreasure = false;
-        Boolean hascstle = false;
         //Timestamp timestart = new Timestamp(System.currentTimeMillis());
         //mapDAO.insertTiles(tileList);
         try {
@@ -56,11 +55,6 @@ public class POSTMapTiles {
                 case 1:
                     grass = grass+1;
                     treasure = treasure +1;
-                    castle = castle + 1;
-                    if(castle == 4){             // place castle on 4th grass field found
-                        tile.setCastle(1);
-                        hascstle = true;
-                    }
                     if(treasure == 2){              //place treasure on 2nd grass field found
                         tile.setTreasure(1);
                         hastreasure = true;
@@ -68,6 +62,8 @@ public class POSTMapTiles {
                     break;
                 case 2:
                     mountain = mountain+1;
+                    if(tile.getCastle() == 1)
+                        castlewater=1;
                     break;
                 case 3:
                     water = water+1;
@@ -77,12 +73,15 @@ public class POSTMapTiles {
                     if(tile.getY() == 2 || tile.getY() == 3){ //to avoid islands
                         islandwater = islandwater + 1;
                     }
+                    if(tile.getCastle() == 1){
+                        castlewater = 1;
+                    }
                     break;
             }
         }
-        if(mapsize != 32 || mountain < 3 || grass < 5 || water < 4 || borderwater > 3 || islandwater > 0 || !hascstle || !hastreasure){      //auf 32 zurücksetzen
+        if(mapsize != 32 || mountain < 3 || grass < 5 || water < 4 || borderwater > 3 || islandwater > 0 ||  castlewater != 0 || !hastreasure){      //auf 32 zurücksetzen
             Error error = new Error();
-            error.setMessage("Violated Map Rules! mapsize: " + mapsize + " Mountains: " + mountain + " Grass: " + grass + " Water: " + water + " Borderwater: " +borderwater + "Possible island: " + islandwater);
+            error.setMessage("Violated Map Rules! mapsize: " + mapsize + " Mountains: " + mountain + " Grass: " + grass + " Water: " + water + " Borderwater: " +borderwater + "Possible island: " + islandwater + "castle not on grass" + castlewater);
             return Response.status(Response.Status.EXPECTATION_FAILED).entity(error).build();
         }
             Timestamp timestamp = new Timestamp(tileList.getTime_end_generation());

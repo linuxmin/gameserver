@@ -14,6 +14,7 @@ import javax.ws.rs.core.Response;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Path("/map")
@@ -29,10 +30,20 @@ public class GETFullMap {
         final TileDAO tileDAO = new TileDAO(entityManager);
         TileList tileList = new TileList();
         Map map = new Map();
+        TileList tileList2 = new TileList();
         try {
             map = mapDAO.findOtherMapByGame_id(map_id);
             List<Tile> tileUtilList = map.getTiles();
             tileList.setTiles(tileUtilList);
+            List<Tile> tileList1 = new ArrayList<>();
+            for(Tile tile : tileList.getTiles()){
+                Tile tile1 = new Tile(tile);
+                tile1.setTreasure(0);
+                tile1.setCastle(0);
+                tileList1.add(tile);
+            }
+
+            tileList2.setTiles(tileList1);
         }catch(NullPointerException e){  // map not ready or not found
             e.printStackTrace();
             return Response.status(Response.Status.NO_CONTENT).build();
@@ -41,6 +52,6 @@ public class GETFullMap {
             return Response.status(Response.Status.NO_CONTENT).build();
 
         }
-        return Response.status(200).type(MediaType.APPLICATION_XML).entity(tileList).build();
+        return Response.status(200).type(MediaType.APPLICATION_XML).entity(tileList2).build();
     }
 }

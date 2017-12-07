@@ -16,7 +16,7 @@ import org.apache.logging.log4j.Logger;
 
 @Path("/startgame")
 public class GETStartNewGame {
-    //private static final Logger LOGGER = LogManager.getLogger(GETStartNewGame.class);
+    private static final Logger LOGGER = LogManager.getLogger(Game.class);
     @GET
     @Path("/{id}")
     @Produces(MediaType.APPLICATION_XML)
@@ -32,6 +32,7 @@ public class GETStartNewGame {
 
         try {
             if (id == 1) {
+
                 game = gameDAO.createGame(game);
                 Map map = new Map(game);
                 map = mapDAO.createMap(map);
@@ -39,6 +40,11 @@ public class GETStartNewGame {
                 player = playerDAO.createPlayer(player);
                 map.setPlayer_id(player.getPlayer_id());
                 map = mapDAO.createMap(map);
+                LOGGER.info(game);
+                LOGGER.info(map);
+                LOGGER.info(player);
+                LOGGER.info(game.getGame_id());
+                LOGGER.info(player.getGame_id());
                 return Response.status(Response.Status.OK).type(MediaType.APPLICATION_XML_TYPE).entity(player).build();
             } else if (id == 2) {
                 Game game2 = new Game(gameDAO.findOpenGame());

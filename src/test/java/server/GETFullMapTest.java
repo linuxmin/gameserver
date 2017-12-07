@@ -10,7 +10,6 @@ public class GETFullMapTest {
         GETFullMap getFullMap = new GETFullMap();
         assertEquals(204,getFullMap.getMsg(715).getStatus());
         assertEquals(200,getFullMap.getMsg(165).getStatus());
-
     }
 
 }

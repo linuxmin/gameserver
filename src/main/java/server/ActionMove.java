@@ -207,7 +207,6 @@ public class ActionMove {
         Timestamp end = new Timestamp(this.getTime_end());
         if(this.getTime_start() != null && this.getTime_end() != null){
             diff = (end.getTime()- start.getTime())/1000;
-            System.out.println("FUCK" + diff);
             if(diff > 3){
                 return false;
             }

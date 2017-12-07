@@ -80,7 +80,6 @@ public class  POSTActionMove {
                 }
             }
                 Long count = actionMoveDAO.countActions(actionMove);
-                System.out.println(count);
                   if(count > 198 && actionMove.getWon() != 1){
                       Error error = new Error();
                       error.setMessage("Too many actions, both lost");
