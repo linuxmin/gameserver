@@ -36,6 +36,12 @@ public final class GameDAO {
         return game;
     }
 
+    public Integer findWinner(Game game) throws  Exception{
+        Integer winner_id = 0;
+        winner_id= entityManager.createNamedQuery("get_game_id_winner", Integer.class).setParameter("game_id",game.getGame_id()).getSingleResult();
+        return winner_id;
+    }
+
     //UPDATE
 
     public void iterateGamePlayerNo(Integer game_id) throws Exception{

@@ -1,7 +1,9 @@
 package server;
 
 import javax.persistence.EntityManager;
+import javax.persistence.Query;
 import javax.persistence.TypedQuery;
+import java.util.List;
 
 public final class ActionMoveDAO {
     private final EntityManager entityManager;
@@ -34,6 +36,14 @@ public final class ActionMoveDAO {
         action_id= entityManager.createNamedQuery("get_last_move", Integer.class).getSingleResult();
         ActionMove actionMove = new ActionMove();
         actionMove = findActionMoveByID(action_id);
+        return actionMove;
+    }
+
+    public ActionMove findActions(ActionMove actionMove, Integer number) throws  Exception{
+        ActionMove actionMove1 = new ActionMove();
+        Query query = entityManager.createNamedQuery("get_actions_by_game_id", ActionMove.class).setParameter("game_id",actionMove.getGame_id());
+        List<ActionMove> list = query.getResultList();
+        actionMove = list.get(number);
         return actionMove;
     }
 

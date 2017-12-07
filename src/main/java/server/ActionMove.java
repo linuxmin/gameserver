@@ -27,6 +27,12 @@ import java.util.List;
                 name = "count_actions",
                 query = "SELECT count (action_id) from ActionMove where game_id = :game_id"
         ),
+
+        @NamedQuery(
+                name = "get_actions_by_game_id",
+                query =  "from ActionMove where game_id =:game_id"
+        ),
+
         @NamedQuery(
                 name = "get_last_move_player",
                 query = "select max (action_id) from ActionMove where player_id = :player_id"

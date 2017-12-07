@@ -87,8 +87,8 @@ public class POSTMapTiles {
         }
             Timestamp timestamp = new Timestamp(tileList.getTime_end_generation());
             map.setTime_end_generation(timestamp);
-            //boolean timeok = map.checkSeconds();
-            boolean timeok = true;
+            boolean timeok = map.checkSeconds();
+            //boolean timeok = true;
 
             if(!timeok){
                 Error error = new Error();

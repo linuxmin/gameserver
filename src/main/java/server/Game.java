@@ -26,9 +26,11 @@ import java.util.List;
         @NamedQuery(
                 name = "get_game_id_loser",
                 query = "from Game where loser_id = :id"
+        ),
+        @NamedQuery(
+                name = "get_game_id_winner",
+                query = "select winner_id from Game where game_id = :game_id"
         )
-
-
 })
 
 public class Game{

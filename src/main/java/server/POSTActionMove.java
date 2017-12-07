@@ -6,10 +6,13 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.sql.Timestamp;
+import java.io.FileOutputStream;
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.Marshaller;
 
 
 @Path("/action")
-public class POSTActionMove {
+public class  POSTActionMove {
     @POST
     @Consumes(MediaType.APPLICATION_XML)
     public Response consumeXML(ActionMove actionMove ) {
@@ -47,6 +50,17 @@ public class POSTActionMove {
                 }else if(otherplayermove.getWon() == 1) {
                     Error error = new Error();
                     error.setMessage("You lost!");
+                    Integer winner_id = gameDAO.findWinner(game);
+                    ActionMove actionMove10 = actionMoveDAO.findActions(actionMovetoDB,1);
+                    ActionMove actionMove20 = actionMoveDAO.findActions(actionMovetoDB,2);
+                    XMLFinishedGame xmlFinishedGame = new XMLFinishedGame();
+                    xmlFinishedGame.setActionMove10(actionMove10);
+                    xmlFinishedGame.setActionMove20(actionMove20);
+                    xmlFinishedGame.setWinner_id(winner_id);
+                    JAXBContext contextObj = JAXBContext.newInstance(XMLFinishedGame.class);
+                    Marshaller marshallerObj = contextObj.createMarshaller();
+                    marshallerObj.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+                    marshallerObj.marshal(xmlFinishedGame, new FileOutputStream("XMLFinished.xml"));
                     return Response.status(Response.Status.EXPECTATION_FAILED).entity(error).build();
                 }
             }
@@ -77,13 +91,16 @@ public class POSTActionMove {
 
             actionMovetoDB.setProperties(actionMove);
             actionMovetoDB = actionMoveDAO.createActionMove(actionMovetoDB);
+
+
+
             return Response.status(Response.Status.OK).entity(actionMovetoDB).build();
 
 
         }catch(java.lang.NullPointerException e){
             e.printStackTrace();
             Error error = new Error();
-            error.setMessage("Missing attributes for Player");
+            error.setMessage("Action failed");
             return Response.status(Response.Status.EXPECTATION_FAILED).type(MediaType.APPLICATION_XML).entity(error).build();
         }catch(java.lang.Exception e){
             e.printStackTrace();
