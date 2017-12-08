@@ -58,4 +58,14 @@ dependencies {
     sourceCompatibility = 1.8
 }
 
+apply plugin: 'application'
+
+mainClassName = 'server.StandaloneRESTServer'
+
+jar {
+    manifest {
+        attributes 'Main-Class': mainClassName,
+                'Class-Path': configurations.runtime.files.collect {"$it.name"}.join(' ')
+    }
+}
 

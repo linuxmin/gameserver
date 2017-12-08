@@ -15,10 +15,11 @@
             <property name="javax.persistence.jdbc.driver" value="org.sqlite.JDBC"></property>
             <property name="javax.persistence.jdbc.user" value=""></property>
             <property name="javax.persistence.jdbc.password" value=""></property>
-            <property name="javax.persistence.jdbc.url" value="jdbc:sqlite:./mydb1.db"></property>
+            <property name="javax.persistence.jdbc.url" value="jdbc:sqlite:mydb1.db"></property>
             <property name="hibernate.dialect" value="org.hibernate.dialect.SQLiteDialect"></property>
             <property name="hibernate.show_sql" value="true"></property>
             <property name="hibernate.format_sql" value="true"></property>
+            <property name="hibernate.hbm2ddl.auto" value="create"></property>
         </properties>
     </persistence-unit>
 </persistence>

@@ -43,7 +43,7 @@ public final class MapDAO {
         }
     }
 
-    public Map findOtherMapByGame_id(Integer map_id) throws Exception{
+    public Map findOtherMapByGame_id(Integer map_id) throws Exception{ //find map of the opponent of actual player
         Integer player_id = 0;
         Map map = new Map();
         Map other_map = new Map();

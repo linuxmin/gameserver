@@ -17,15 +17,15 @@ public class POSTRegisterNewPlayer {
         final PlayerDAO playerDAO = new PlayerDAO(entityManager);
         final GameDAO gameDAO = new GameDAO(entityManager);
         try {
-            playerDAO.insertPlayerData(player);
-            gameDAO.iterateGamePlayerNo(player.getGame_id());
+            playerDAO.insertPlayerData(player);  //insert player data
+            gameDAO.iterateGamePlayerNo(player.getGame_id()); //iterate registered player_no
            return Response.status(200).type(MediaType.APPLICATION_XML).entity(player).build();
-        }catch(java.lang.NullPointerException e){
+        }catch(java.lang.NullPointerException e){ //if attributes are not complete
             e.printStackTrace();
             Error error = new Error();
             error.setMessage("Missing attributes for Player");
             return Response.status(Response.Status.EXPECTATION_FAILED).type(MediaType.APPLICATION_XML).entity(error).build();
-        }catch(java.lang.Exception e){
+        }catch(java.lang.Exception e){ //other unknown errors
             e.printStackTrace();
             Error error = new Error();
             error.setMessage(e.toString());

@@ -31,14 +31,13 @@ public class GETStartNewGame {
         Game game = new Game();
 
         try {
-            if (id == 1) {
-
+            if (id == 1) { // if id sent is 1 (Player1), then create a new game.
                 game = gameDAO.createGame(game);
                 Map map = new Map(game);
                 map = mapDAO.createMap(map);
                 Player player = new Player(map, game);
                 player = playerDAO.createPlayer(player);
-                map.setPlayer_id(player.getPlayer_id());
+                map.setPlayer_id(player.getPlayer_id()); //associate the map with the player
                 map = mapDAO.createMap(map);
                 LOGGER.info(game);
                 LOGGER.info(map);
@@ -46,8 +45,8 @@ public class GETStartNewGame {
                 LOGGER.info(game.getGame_id());
                 LOGGER.info(player.getGame_id());
                 return Response.status(Response.Status.OK).type(MediaType.APPLICATION_XML_TYPE).entity(player).build();
-            } else if (id == 2) {
-                Game game2 = new Game(gameDAO.findOpenGame());
+            } else if (id == 2) { //if player is Player2 then add him to the last created open game.
+                Game game2 = new Game(gameDAO.findOpenGame()); //find the last created open game
                 Map map = new Map(game2);
                 map = mapDAO.createMap(map);
                 Player player = new Player(map, game2);
@@ -58,7 +57,7 @@ public class GETStartNewGame {
             } else {
                 return Response.status(Response.Status.NOT_ACCEPTABLE).build();
             }
-        }catch(Exception e) {
+        }catch(Exception e) { //no or wrong id specified
             e.printStackTrace();
             Error error = new Error();
             error.setMessage("No ID specified or no open game found");

@@ -32,10 +32,13 @@ public class GETFullMap {
         Map map = new Map();
         TileList tileList2 = new TileList();
         try {
-            map = mapDAO.findOtherMapByGame_id(map_id);
+            map = mapDAO.findOtherMapByGame_id(map_id);  //find the map from the other player of the game
             List<Tile> tileUtilList = map.getTiles();
             tileList.setTiles(tileUtilList);
             List<Tile> tileList1 = new ArrayList<>();
+            /*
+            Copy the tiles from the map of the other player to a new tilelist and hide the treasure and the castle
+             */
             for(Tile tile : tileList.getTiles()){
                 Tile tile1 = new Tile(tile);
                 tile1.setTreasure(0);

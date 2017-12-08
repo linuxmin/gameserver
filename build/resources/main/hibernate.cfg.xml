@@ -13,7 +13,6 @@
         <property name="connection.password"/>
         <mapping class="server.Player"></mapping>
         <mapping class="server.Game"></mapping>
-        <mapping class="server.Play"></mapping>
         <mapping class="server.Map"></mapping>
         <!-- DB schema will be updated if needed -->
     </session-factory>

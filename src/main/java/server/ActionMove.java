@@ -201,17 +201,17 @@ public class ActionMove {
         this.won = won;
     }
 
-    public boolean checkSeconds(){
+    public boolean checkSeconds(){  // to check if players_action last less then 3 seconds
         Long diff;
         Timestamp start = new Timestamp(this.getTime_start());
         Timestamp end = new Timestamp(this.getTime_end());
         if(this.getTime_start() != null && this.getTime_end() != null){
             diff = (end.getTime()- start.getTime())/1000;
             if(diff > 3){
-                return false;
+                return false; // false if action lasted more than 3 seconds
             }
             return true;
         }
-        return false;
+        return false; //also false if calculation not possible
     }
 }

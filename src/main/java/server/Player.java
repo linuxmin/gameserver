@@ -9,6 +9,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -59,6 +60,10 @@ public class Player{
     @XmlElement(name="map_id")
     @Column(name="map_id")
     private Integer map_id;
+
+    @XmlElement(name="time_start")
+    @Column(name="time_start")
+    private  String time_start = new Timestamp(System.currentTimeMillis()).toString();
 
     Player(){}  //default constructor for hibernate
 

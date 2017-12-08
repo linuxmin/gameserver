@@ -30,7 +30,7 @@ public final class PlayerDAO {
     }
 
     //UPDATE (still empty
-    public void insertPlayerData(Player player) throws Exception{
+    public void insertPlayerData(Player player) throws Exception{ //insertion of player data based on player_id
         Player player2 = findPlayerByID(player.getPlayer_id());
         player2.setPlayerProperties(player);
         createPlayer(player2);

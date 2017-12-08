@@ -35,17 +35,13 @@ public class GETReadyGame {
             game = gameDAO.findGameByID(player.getGame_id());
             System.out.println(game.getPlayers_no());
             player_no = game.getPlayers_no();
-            if(player_no == 2) {
+            if(player_no == 2) {   //if 2 players are in the game, then the game is ready
                 return Response.status(Response.Status.OK).build();
-                /*}else{
-                    map.setMap_id(mapDAO.findOpenMapByPlayerID(player.getPlayer_id()));
-                    return Response.status(Response.Status.CREATED).type(MediaType.APPLICATION_XML_TYPE).entity(map).build();
-                }*/
             }
             else
-            return Response.status(Response.Status.NO_CONTENT).type(MediaType.APPLICATION_XML_TYPE).build();
+            return Response.status(Response.Status.NO_CONTENT).build();
 
-        }catch(NullPointerException e){
+        }catch(NullPointerException e){  // if a wrong player_id was sent by the client
             Error error = new Error();
             error.setMessage("Player not registered in a Game");
             e.printStackTrace();

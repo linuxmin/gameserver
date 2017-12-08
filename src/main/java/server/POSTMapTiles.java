@@ -21,6 +21,8 @@ public class POSTMapTiles {
         final TileDAO tileDAO = new TileDAO(entityManager);
         final GameDAO gameDAO = new GameDAO(entityManager);
         final PlayerDAO playerDAO = new PlayerDAO(entityManager);
+
+        //variables for checking business rules
         Integer mapsize = tileList.getTiles().size();
         Integer grass = 0;
         Integer mountain = 0;
@@ -30,12 +32,16 @@ public class POSTMapTiles {
         Integer treasure = 0;
         Integer castlewater = 0;
         Boolean hastreasure = false;
-        //Timestamp timestart = new Timestamp(System.currentTimeMillis());
-        //mapDAO.insertTiles(tileList);
+
         try {
             Map map = new Map();
             Game game = new Game();
             Player player = new Player();
+            /*
+            finding actual player and game based on tilelist send by client
+            and checking if game is not already lost because other player violated
+            map rules.
+             */
             player = playerDAO.findPlayerByID(tileList.getPlayer_id());
             game = gameDAO.findGameByID(player.getGame_id());
             if(game.getloser_id() != 0){
@@ -45,6 +51,9 @@ public class POSTMapTiles {
                 error.setMessage("Other Player violated Map rules");
                 return Response.status(Response.Status.EXPECTATION_FAILED).entity(error).build();
             }
+            /*
+            checking the business rules of the map
+             */
         for(Tile tile : tileList.getTiles()){
             Tile tiletoDB = new Tile(tile);
             tileDAO.createTile(tiletoDB);
@@ -52,7 +61,7 @@ public class POSTMapTiles {
             map.getTiles().add(tiletoDB);
             mapDAO.createMap(map);
             switch(tile.getType()){
-                case 1:
+                case 1: //grass
                     grass = grass+1;
                     treasure = treasure +1;
                     if(treasure == 2){              //place treasure on 2nd grass field found
@@ -60,20 +69,20 @@ public class POSTMapTiles {
                         hastreasure = true;
                     }
                     break;
-                case 2:
+                case 2: //mountain
                     mountain = mountain+1;
-                    if(tile.getCastle() == 1)
+                    if(tile.getCastle() == 1) //if castle stands on mountain
                         castlewater=1;
                     break;
                 case 3:
                     water = water+1;
-                    if(tile.getY() == 4){
+                    if(tile.getY() == 4){ //counting water on the borderside of map
                         borderwater = borderwater+1;
                     }
-                    if(tile.getY() == 2 || tile.getY() == 3){ //to avoid islands
+                    if(tile.getY() == 2 || tile.getY() == 3){ //to avoid islands water only allowed on y1 or y4
                         islandwater = islandwater + 1;
                     }
-                    if(tile.getCastle() == 1){
+                    if(tile.getCastle() == 1){ //castle stands on water
                         castlewater = 1;
                     }
                     break;
@@ -82,36 +91,37 @@ public class POSTMapTiles {
         if(mapsize != 32 || mountain < 3 || grass < 5 || water < 4 || borderwater > 3 || islandwater > 0 ||  castlewater != 0 || !hastreasure){      //auf 32 zurücksetzen
             Error error = new Error();
             error.setMessage("Violated Map Rules! mapsize: " + mapsize + " Mountains: " + mountain + " Grass: " + grass + " Water: " + water + " Borderwater: " +borderwater + "Possible island: " + islandwater + "castle not on grass" + castlewater);
+            game = gameDAO.findGameByID(map.getGame_id());
+            game.setEnd_code(1); //violated rules
             return Response.status(Response.Status.EXPECTATION_FAILED).entity(error).build();
         }
+        /*
+        checking if mapgeneration lasted less then 3 seconds
+         */
             Timestamp timestamp = new Timestamp(tileList.getTime_end_generation());
             map.setTime_end_generation(timestamp);
             boolean timeok = map.checkSeconds();
             //boolean timeok = true;
 
-            if(!timeok){
+            if(!timeok){ //if lasted too long
                 Error error = new Error();
                 error.setMessage("Mapgeneration lasted too long!");
-
-
                 game = gameDAO.findGameByID(map.getGame_id());
-                game.setEnd_code(2);
+                game.setEnd_code(1);  //end code 1 = violated rules
                 game.setloser_id(map.getPlayer_id());
                 String time_end = new Timestamp(System.currentTimeMillis()).toString();
                 game.setTime_end(time_end);
                 gameDAO.createGame(game);
                 return Response.status(Response.Status.EXPECTATION_FAILED).entity(error).build();
             }
-            // System.out.print(timeok);
-            //mapDAO.createMap(map);
-        }catch(NullPointerException e){
+        }catch(NullPointerException e){ //if id of map is wrong
             Error error = new Error();
             error.setMessage("Map_ID wrong or not specified");
             e.printStackTrace();
             entityManager.close();
             entityManagerFactory.close();
             return Response.status(Response.Status.EXPECTATION_FAILED).entity(error).build();
-        }catch(Exception e){
+        }catch(Exception e){ //other unknown errors
             Error error = new Error();
             error.setMessage(e.toString());
             entityManager.close();

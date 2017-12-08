@@ -75,7 +75,7 @@ public class Game{
 
     Game( String time_end, Integer end_code){
         this.end_code = end_code;
-        this.time_end =  new Timestamp(System.currentTimeMillis()).toString();
+        this.time_end =  new Timestamp(System.currentTimeMillis()).toString(); //sets end time to actual time of server
 
     }
 

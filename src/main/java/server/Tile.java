@@ -139,37 +139,4 @@ public class Tile {
 
 
 
-
-
-
-   /*
-
-
-
-
-
-
-   public Integer getGame_id() {
-        return game_id;
-    }
-
-    public void setGame_id(Integer game_id) {
-        this.game_id = game_id;
-    }
-
-
-
-    public Integer getPlayer_id() {
-        return player_id;
-    }
-
-    public void setPlayer_id(Integer player_id) {
-        this.player_id = player_id;
-    }
-
-*/
-
-
-
-
 }

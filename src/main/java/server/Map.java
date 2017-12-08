@@ -132,7 +132,7 @@ public class Map{
         this.time_end_generation = time_end_generation;
     }
 
-    public boolean checkSeconds(){
+    public boolean checkSeconds(){ //again a function to check if mapgeneration lasted shorter than 3 sec
         Long diff;
         if(this.time_start_generation != null && this.time_end_generation != null){
             diff = (this.time_start_generation.getTime() - this.time_end_generation.getTime())/1000;

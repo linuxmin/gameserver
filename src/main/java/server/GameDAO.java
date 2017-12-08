@@ -29,14 +29,14 @@ public final class GameDAO {
         return entityManager.find(Game.class, game_id);
     }
 
-    public Game findOpenGame() throws  Exception{
+    public Game findOpenGame() throws  Exception{ //finds the last open game
         Integer game_id = 0;
         game_id= entityManager.createNamedQuery("get_open_game", Integer.class).getSingleResult();
         Game game = findGameByID(game_id);
         return game;
     }
 
-    public Integer findWinner(Game game) throws  Exception{
+    public Integer findWinner(Game game) throws  Exception{ //finds the id of the winner of a game
         Integer winner_id = 0;
         winner_id= entityManager.createNamedQuery("get_game_id_winner", Integer.class).setParameter("game_id",game.getGame_id()).getSingleResult();
         return winner_id;
@@ -44,10 +44,10 @@ public final class GameDAO {
 
     //UPDATE
 
-    public void iterateGamePlayerNo(Integer game_id) throws Exception{
+    public void iterateGamePlayerNo(Integer game_id) throws Exception{ // iterates the player_no of a game (+1)
         Game game = findGameByID(game_id);
         game.setPlayers_no();
-        System.out.println(game.getGame_id());
+     //   System.out.println(game.getGame_id());
         createGame(game);
     }
 
