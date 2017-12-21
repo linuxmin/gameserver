@@ -104,8 +104,9 @@ public class POSTMapTiles {
         Long endtime = tileList.getTime_end_generation();
         map.setTime_start_generation(starttime);
         map.setTime_end_generation(endtime);
-        boolean timeok = map.checkSeconds();
-            //boolean timeok = true;
+        // @TODO checkseconds should be activated after testing
+        //boolean timeok = map.checkSeconds();
+            boolean timeok = true;
 
             if(!timeok){ //if lasted too long
                 Error error = new Error();

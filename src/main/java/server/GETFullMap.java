@@ -40,10 +40,52 @@ public class GETFullMap {
             Copy the tiles from the map of the other player to a new tilelist and hide the treasure and the castle
              */
             for(Tile tile : tileList.getTiles()){
+
+                switch (tile.getY()){
+                    case 0:
+                        tile.setY(7);
+                        break;
+                    case 1:
+                        tile.setY(6);
+                        break;
+                    case 2:
+                        tile.setY(5);
+                        break;
+                    case 3:
+                        tile.setY(4);
+                        break;
+                }
+
+                switch (tile.getX()){
+                    case 0:
+                        tile.setX(7);
+                        break;
+                    case 1:
+                        tile.setX(6);
+                        break;
+                    case 2:
+                        tile.setX(5);
+                        break;
+                    case 3:
+                        tile.setX(4);
+                        break;
+                    case 4:
+                        tile.setX(3);
+                        break;
+                    case 5:
+                        tile.setX(2);
+                        break;
+                    case 6:
+                        tile.setX(1);
+                        break;
+                    case 7:
+                        tile.setX(0);
+                        break;
+                }
                 Tile tile1 = new Tile(tile);
                 tile1.setTreasure(0);
                 tile1.setCastle(0);
-                tileList1.add(tile);
+                tileList1.add(tile1);
             }
 
             tileList2.setTiles(tileList1);
