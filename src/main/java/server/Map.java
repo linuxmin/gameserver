@@ -46,14 +46,14 @@ public class Map{
 
     @XmlElement(name="time_start_generation")
     @Column(name="time_start_generation")
-    private Timestamp time_start_generation;
+    private Long time_start_generation;
 
 
 
     @XmlElement(name="time_end_generation")
     @Column(name="time_end_generation")
 
-    private Timestamp time_end_generation;
+    private Long time_end_generation;
 
   //  @OneToMany(mappedBy = "mappingmap")
   //  private List<Tile> tiles;
@@ -117,25 +117,25 @@ public class Map{
         return this.tiles;
     }
 
-    public Timestamp getTime_start_generation() {
+    public Long getTime_start_generation() {
         return time_start_generation;
     }
-    public void setTime_start_generation(Timestamp time_start_generation) {
+    public void setTime_start_generation(Long time_start_generation) {
         this.time_start_generation = time_start_generation;
     }
 
-    public Timestamp getTime_end_generation() {
+    public Long getTime_end_generation() {
         return time_end_generation;
     }
 
-    public void setTime_end_generation(Timestamp time_end_generation) {
+    public void setTime_end_generation(Long time_end_generation) {
         this.time_end_generation = time_end_generation;
     }
 
     public boolean checkSeconds(){ //again a function to check if mapgeneration lasted shorter than 3 sec
         Long diff;
         if(this.time_start_generation != null && this.time_end_generation != null){
-            diff = (this.time_start_generation.getTime() - this.time_end_generation.getTime())/1000;
+            diff = (this.time_start_generation - this.time_end_generation)/1000;
             if(diff > 3){
                 return false;
             }

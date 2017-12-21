@@ -88,7 +88,9 @@ public class POSTMapTiles {
                     break;
             }
         }
-        if(mapsize != 32 || mountain < 3 || grass < 5 || water < 4 || borderwater > 3 || islandwater > 0 ||  castlewater != 0 || !hastreasure){      //auf 32 zurücksetzen
+
+        // @TODO Map Rules Checking enable after testing
+      /*  if(mapsize != 32 || mountain < 3 || grass < 5 || water < 4 || borderwater > 3 || islandwater > 0 ||  castlewater != 0 || !hastreasure){      //auf 32 zurücksetzen
             Error error = new Error();
             error.setMessage("Violated Map Rules! mapsize: " + mapsize + " Mountains: " + mountain + " Grass: " + grass + " Water: " + water + " Borderwater: " +borderwater + "Possible island: " + islandwater + "castle not on grass" + castlewater);
             game = gameDAO.findGameByID(map.getGame_id());
@@ -98,9 +100,11 @@ public class POSTMapTiles {
         /*
         checking if mapgeneration lasted less then 3 seconds
          */
-            Timestamp timestamp = new Timestamp(tileList.getTime_end_generation());
-            map.setTime_end_generation(timestamp);
-            boolean timeok = map.checkSeconds();
+        Long starttime = tileList.getTime_start_generation();
+        Long endtime = tileList.getTime_end_generation();
+        map.setTime_start_generation(starttime);
+        map.setTime_end_generation(endtime);
+        boolean timeok = map.checkSeconds();
             //boolean timeok = true;
 
             if(!timeok){ //if lasted too long

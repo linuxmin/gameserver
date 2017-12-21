@@ -68,3 +68,187 @@
 2017-12-08 14:36:47 INFO  [jdk-http-server-1] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
 2017-12-08 14:36:47 INFO  [jdk-http-server-1] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
 2017-12-08 14:36:47 INFO  [jdk-http-server-1] org.hibernate.orm.connections.pooling: HHH10001008: Cleaning up connection pool [jdbc:sqlite:./mydb1.db]
+2017-12-09 14:49:37 WARN  [jdk-http-server-1] org.hibernate.ejb.HibernatePersistence: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2017-12-09 14:49:37 WARN  [jdk-http-server-1] org.hibernate.ejb.HibernatePersistence: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2017-12-09 14:49:37 INFO  [jdk-http-server-1] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: gameserver
+	...]
+2017-12-09 14:49:37 INFO  [jdk-http-server-1] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-12-09 14:49:37 INFO  [jdk-http-server-1] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-12-09 14:49:38 INFO  [jdk-http-server-1] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-09 14:49:38 INFO  [jdk-http-server-1] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-12-09 14:49:38 WARN  [jdk-http-server-1] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-09 14:49:38 INFO  [jdk-http-server-1] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:./mydb1.db]
+2017-12-09 14:49:38 INFO  [jdk-http-server-1] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {}
+2017-12-09 14:49:38 INFO  [jdk-http-server-1] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-12-09 14:49:38 INFO  [jdk-http-server-1] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-09 14:49:38 INFO  [jdk-http-server-1] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-12-09 14:49:38 INFO  [jdk-http-server-1] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-12-09 14:49:38 INFO  [jdk-http-server-1] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-12-09 14:49:38 INFO  [jdk-http-server-1] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-12-09 14:49:39 INFO  [jdk-http-server-1] org.hibernate.orm.connections.pooling: HHH10001008: Cleaning up connection pool [jdbc:sqlite:./mydb1.db]
+2017-12-09 14:50:10 WARN  [jdk-http-server-1] org.hibernate.ejb.HibernatePersistence: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2017-12-09 14:50:10 WARN  [jdk-http-server-1] org.hibernate.ejb.HibernatePersistence: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2017-12-09 14:50:10 INFO  [jdk-http-server-1] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: gameserver
+	...]
+2017-12-09 14:50:10 WARN  [jdk-http-server-1] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-09 14:50:10 INFO  [jdk-http-server-1] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:./mydb1.db]
+2017-12-09 14:50:10 INFO  [jdk-http-server-1] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {}
+2017-12-09 14:50:10 INFO  [jdk-http-server-1] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-12-09 14:50:10 INFO  [jdk-http-server-1] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-09 14:50:10 INFO  [jdk-http-server-1] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-12-09 14:50:10 INFO  [jdk-http-server-1] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-12-09 14:50:10 INFO  [jdk-http-server-1] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-12-09 14:50:11 INFO  [jdk-http-server-1] server.Game: server.Game@73ac8b53
+2017-12-09 14:50:11 INFO  [jdk-http-server-1] server.Game: server.Map@7cc00cdb
+2017-12-09 14:50:11 INFO  [jdk-http-server-1] server.Game: server.Player@3d856009
+2017-12-09 14:50:11 INFO  [jdk-http-server-1] server.Game: 111
+2017-12-09 14:50:11 INFO  [jdk-http-server-1] server.Game: 111
+2017-12-09 14:50:11 INFO  [jdk-http-server-1] org.hibernate.orm.connections.pooling: HHH10001008: Cleaning up connection pool [jdbc:sqlite:./mydb1.db]
+2017-12-09 14:50:30 WARN  [jdk-http-server-1] org.hibernate.ejb.HibernatePersistence: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2017-12-09 14:50:30 WARN  [jdk-http-server-1] org.hibernate.ejb.HibernatePersistence: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2017-12-09 14:50:30 INFO  [jdk-http-server-1] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: gameserver
+	...]
+2017-12-09 14:50:30 WARN  [jdk-http-server-1] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-09 14:50:30 INFO  [jdk-http-server-1] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:./mydb1.db]
+2017-12-09 14:50:30 INFO  [jdk-http-server-1] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {}
+2017-12-09 14:50:30 INFO  [jdk-http-server-1] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-12-09 14:50:30 INFO  [jdk-http-server-1] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-09 14:50:30 INFO  [jdk-http-server-1] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-12-09 14:50:30 INFO  [jdk-http-server-1] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-12-09 14:50:30 INFO  [jdk-http-server-1] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-12-09 14:50:30 INFO  [jdk-http-server-1] org.hibernate.orm.connections.pooling: HHH10001008: Cleaning up connection pool [jdbc:sqlite:./mydb1.db]
+2017-12-09 14:51:13 WARN  [jdk-http-server-0] org.hibernate.ejb.HibernatePersistence: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2017-12-09 14:51:13 WARN  [jdk-http-server-0] org.hibernate.ejb.HibernatePersistence: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2017-12-09 14:51:14 INFO  [jdk-http-server-0] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: gameserver
+	...]
+2017-12-09 14:51:14 INFO  [jdk-http-server-0] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-12-09 14:51:14 INFO  [jdk-http-server-0] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-12-09 14:51:14 INFO  [jdk-http-server-0] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-09 14:51:14 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-12-09 14:51:14 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-09 14:51:14 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:./mydb1.db]
+2017-12-09 14:51:14 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {}
+2017-12-09 14:51:14 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-12-09 14:51:14 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-09 14:51:14 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-12-09 14:51:14 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-12-09 14:51:14 INFO  [jdk-http-server-0] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-12-09 14:51:15 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-12-09 14:51:15 INFO  [jdk-http-server-0] server.Game: server.Game@384d4b11
+2017-12-09 14:51:15 INFO  [jdk-http-server-0] server.Game: server.Map@46591e3d
+2017-12-09 14:51:15 INFO  [jdk-http-server-0] server.Game: server.Player@5c5481b
+2017-12-09 14:51:15 INFO  [jdk-http-server-0] server.Game: 112
+2017-12-09 14:51:15 INFO  [jdk-http-server-0] server.Game: 112
+2017-12-09 14:51:15 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001008: Cleaning up connection pool [jdbc:sqlite:./mydb1.db]
+2017-12-09 14:51:21 WARN  [jdk-http-server-0] org.hibernate.ejb.HibernatePersistence: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2017-12-09 14:51:21 WARN  [jdk-http-server-0] org.hibernate.ejb.HibernatePersistence: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2017-12-09 14:51:21 INFO  [jdk-http-server-0] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: gameserver
+	...]
+2017-12-09 14:51:21 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-09 14:51:21 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:./mydb1.db]
+2017-12-09 14:51:21 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {}
+2017-12-09 14:51:21 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-12-09 14:51:21 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-09 14:51:21 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-12-09 14:51:21 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-12-09 14:51:21 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-12-09 14:51:21 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001008: Cleaning up connection pool [jdbc:sqlite:./mydb1.db]
+2017-12-09 14:51:24 WARN  [jdk-http-server-0] org.hibernate.ejb.HibernatePersistence: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2017-12-09 14:51:24 WARN  [jdk-http-server-0] org.hibernate.ejb.HibernatePersistence: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2017-12-09 14:51:24 INFO  [jdk-http-server-0] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: gameserver
+	...]
+2017-12-09 14:51:24 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-09 14:51:24 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:./mydb1.db]
+2017-12-09 14:51:24 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {}
+2017-12-09 14:51:24 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-12-09 14:51:24 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-09 14:51:24 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-12-09 14:51:24 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-12-09 14:51:24 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-12-09 14:51:24 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001008: Cleaning up connection pool [jdbc:sqlite:./mydb1.db]
+2017-12-09 15:06:07 WARN  [jdk-http-server-0] org.hibernate.ejb.HibernatePersistence: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2017-12-09 15:06:07 WARN  [jdk-http-server-0] org.hibernate.ejb.HibernatePersistence: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2017-12-09 15:06:07 INFO  [jdk-http-server-0] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: gameserver
+	...]
+2017-12-09 15:06:07 INFO  [jdk-http-server-0] org.hibernate.Version: HHH000412: Hibernate Core {5.2.11.Final}
+2017-12-09 15:06:07 INFO  [jdk-http-server-0] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+2017-12-09 15:06:07 INFO  [jdk-http-server-0] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-12-09 15:06:07 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-12-09 15:06:07 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-09 15:06:07 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:./mydb1.db]
+2017-12-09 15:06:07 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {}
+2017-12-09 15:06:07 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-12-09 15:06:07 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-09 15:06:07 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-12-09 15:06:07 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-12-09 15:06:08 INFO  [jdk-http-server-0] org.hibernate.validator.internal.util.Version: HV000001: Hibernate Validator 5.3.5.Final
+2017-12-09 15:06:08 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-12-09 15:06:08 INFO  [jdk-http-server-0] server.Game: server.Game@70cfff74
+2017-12-09 15:06:08 INFO  [jdk-http-server-0] server.Game: server.Map@18a85ab6
+2017-12-09 15:06:08 INFO  [jdk-http-server-0] server.Game: server.Player@112d562c
+2017-12-09 15:06:08 INFO  [jdk-http-server-0] server.Game: 113
+2017-12-09 15:06:08 INFO  [jdk-http-server-0] server.Game: 113
+2017-12-09 15:06:08 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001008: Cleaning up connection pool [jdbc:sqlite:./mydb1.db]
+2017-12-09 15:06:28 WARN  [jdk-http-server-0] org.hibernate.ejb.HibernatePersistence: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2017-12-09 15:06:28 WARN  [jdk-http-server-0] org.hibernate.ejb.HibernatePersistence: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2017-12-09 15:06:28 INFO  [jdk-http-server-0] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: gameserver
+	...]
+2017-12-09 15:06:28 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-09 15:06:28 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:./mydb1.db]
+2017-12-09 15:06:28 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {}
+2017-12-09 15:06:28 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-12-09 15:06:28 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-09 15:06:28 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-12-09 15:06:28 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-12-09 15:06:28 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-12-09 15:06:29 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001008: Cleaning up connection pool [jdbc:sqlite:./mydb1.db]
+2017-12-09 15:06:40 WARN  [jdk-http-server-0] org.hibernate.ejb.HibernatePersistence: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2017-12-09 15:06:40 WARN  [jdk-http-server-0] org.hibernate.ejb.HibernatePersistence: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2017-12-09 15:06:40 INFO  [jdk-http-server-0] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: gameserver
+	...]
+2017-12-09 15:06:40 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-09 15:06:40 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:./mydb1.db]
+2017-12-09 15:06:40 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {}
+2017-12-09 15:06:40 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-12-09 15:06:40 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-09 15:06:40 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-12-09 15:06:40 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-12-09 15:06:40 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-12-09 15:06:41 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001008: Cleaning up connection pool [jdbc:sqlite:./mydb1.db]
+2017-12-09 15:07:02 WARN  [jdk-http-server-0] org.hibernate.ejb.HibernatePersistence: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2017-12-09 15:07:02 WARN  [jdk-http-server-0] org.hibernate.ejb.HibernatePersistence: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2017-12-09 15:07:02 INFO  [jdk-http-server-0] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: gameserver
+	...]
+2017-12-09 15:07:02 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-09 15:07:02 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:./mydb1.db]
+2017-12-09 15:07:02 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {}
+2017-12-09 15:07:02 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-12-09 15:07:02 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-09 15:07:02 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-12-09 15:07:02 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-12-09 15:07:02 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-12-09 15:07:02 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001008: Cleaning up connection pool [jdbc:sqlite:./mydb1.db]
+2017-12-09 15:07:11 WARN  [jdk-http-server-0] org.hibernate.ejb.HibernatePersistence: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2017-12-09 15:07:11 WARN  [jdk-http-server-0] org.hibernate.ejb.HibernatePersistence: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2017-12-09 15:07:11 INFO  [jdk-http-server-0] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [
+	name: gameserver
+	...]
+2017-12-09 15:07:11 WARN  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-12-09 15:07:11 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001005: using driver [org.sqlite.JDBC] at URL [jdbc:sqlite:./mydb1.db]
+2017-12-09 15:07:11 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001001: Connection properties: {}
+2017-12-09 15:07:11 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001003: Autocommit mode: false
+2017-12-09 15:07:11 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-12-09 15:07:11 INFO  [jdk-http-server-0] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.SQLiteDialect
+2017-12-09 15:07:11 INFO  [jdk-http-server-0] org.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl: HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [2] less than 4
+2017-12-09 15:07:11 INFO  [jdk-http-server-0] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+2017-12-09 15:07:11 INFO  [jdk-http-server-0] org.hibernate.orm.connections.pooling: HHH10001008: Cleaning up connection pool [jdbc:sqlite:./mydb1.db]

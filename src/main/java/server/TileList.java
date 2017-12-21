@@ -9,7 +9,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
-import java.sql.Timestamp;
 import java.util.List;
 
 //@Entity
@@ -23,6 +22,10 @@ import java.util.List;
         )
 })*/
 public class TileList {
+
+    @XmlElement(name="time_start_generation")
+    private Long time_start_generation;
+
     @XmlElement(name="time_end_generation")
     private Long time_end_generation;
 
@@ -50,6 +53,15 @@ public class TileList {
     public void setTime_end_generation(Long time_end_generation) {
         this.time_end_generation = time_end_generation;
     }
+
+    public Long getTime_start_generation() {
+        return time_start_generation;
+    }
+
+    public void setTime_start_generation(Long time_start_generation) {
+        this.time_start_generation = time_start_generation;
+    }
+
 
     public Integer getPlayer_id() {
         return player_id;
